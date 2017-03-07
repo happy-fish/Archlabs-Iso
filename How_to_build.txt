@@ -73,6 +73,50 @@ Hope this helps.
 
 
 
+Adding AUR packages to the repo:
+
+If you want to add a AUR package to the iso, you will first have to add it to the archlabs-repo.
+To do this, just download the PKGBUILD from the aur. I usually click "download snapshot". 
+Extract the tar file, and navigate into the extracted folder. Open a terminal there and run:
+makepkg -s
+This will build the package. You may get errors for other needed depencies. If you do, you will have to 
+build those packages as well, and also add them to the repo.
+
+When the packaged is finshed building, just move the <packagename>x86_64.pkg.tar.xz file (that is the actual
+package) into the x86_64 folder in the archlabs-repo. Then just run the updaterepo.sh script that I put in
+there.
+That script will automate added the package to the repo database for you.
+
+Now just add the package name to the "packages.both" file in the archiso folder of the archlabs-iso. 
+ 
+That should do it!
+
+Calamares
+
+You will have to re-build calamares every so often. If the qt5 libraries update and don't 
+match the calamares version, it won't run. I keep a package build updated (usually), so let me
+know if you need it and I'll gladly share it. 
+
+Just to explain how I configured calamares for ARCHlabs. 
+calamres is very modular. Almost every function in the installer can be modified by changing 
+or providing a module. I hard coded the theming modules insto the iso in ARCHlabs. It's the same
+thing I do with OBR. So, if you want to change the slides, pictures, ect. You don't have to rebuild
+the entire package. Just go into the iso source code and you will find the slides and brading stuff
+in /etc/calamares within the iso. There are more configurations in /usr/lib/calamares.
+
+I had to rewrite the main.py in the initcpio module, but just minor changes were needed in the
+other modules.
+
+I have no doubt that you guys can build the iso.
+If you have questions, just let me know.
+
+
+
+
+
+
+
+
 
 
 
