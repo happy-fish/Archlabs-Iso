@@ -13,7 +13,7 @@ cp -aT /etc/skel/ /root/
 useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /bin/zsh liveuser
 #chmod 700 /root
 chown -R liveuser:users /home/liveuser
-#Fixes Permission issues with Claamares after install
+#Fixes Permission issues with Calamares after install
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
 echo "liveuser ALL=(ALL) ALL" >> /etc/sudoers
 chown root:root /etc/sudoers /etc/sudoers.d -R
