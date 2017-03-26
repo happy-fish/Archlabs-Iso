@@ -13,7 +13,9 @@ cp -aT /etc/skel/ /root/
 useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /bin/zsh liveuser
 #chmod 700 /root
 chown -R liveuser:users /home/liveuser
-
+#Fixes Permission issues with Claamares after install
+echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
+echo "liveuser ALL=(ALL) ALL" >> /etc/sudoers
 
 sed -i 's/#\(PermitRootLogin \).\+/\1yes/' /etc/ssh/sshd_config
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
