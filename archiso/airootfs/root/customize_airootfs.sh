@@ -16,6 +16,7 @@ chown -R liveuser:users /home/liveuser
 #Fixes Permission issues with Claamares after install
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
 echo "liveuser ALL=(ALL) ALL" >> /etc/sudoers
+chown root:root /etc/sudoers /etc/sudoers.d -R
 
 sed -i 's/#\(PermitRootLogin \).\+/\1yes/' /etc/ssh/sshd_config
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
