@@ -1,0 +1,21 @@
+Updating various parts from the iso coming from different githubs
+
+Make a directory with the name ARCHLABS on your home directory.
+
+All githubs from ARCHLABS go inside this folder including the Archlabs-Iso.
+
+We will gradually make more scripts to update parts of the iso with these scripts.
+
+In essence it is a repetitive task. 
+
+People update the seperate githubs. The githubs need to be included lateron. It can become a monthly release or so.
+
+In order to facilitate the iso build we run scripts to get the most recent files from github and put them in the right place on the Archlabs-Iso.
+
+Nothing more nothing less.
+
+Read the code first and run then.
+
+Greets 
+
+Erik
