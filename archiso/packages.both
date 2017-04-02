@@ -60,10 +60,8 @@ gksu
 squashfs-tools
 pavucontrol
 lxrandr
-xfce4-settings
 python2-dbus
 yaourt
-lxappearance-obconf
 pcmanfm
 chromium
 rxvt-unicode
@@ -107,6 +105,13 @@ obkey
 minecraft
 gigolo
 
+# LxAppearance
+lxappearance
+lxappearance-obconf
+lxmenu-data
+lxrandr
+lxterminal
+
 
 #desktop manager
 lightdm 
@@ -143,7 +148,9 @@ thunar
 vlc
 qt4
 
-
+#Fix gtk themes
+gtk3-nocsd-git
+lib32-libgtk3-nocsd-git
 
 # themes
 faenza-icon-theme
@@ -235,5 +242,6 @@ docbook2x
 freetype2-infinality
 fontconfig-infinality
 xfce-slimlock
+gmrun
 
 
