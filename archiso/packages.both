@@ -119,6 +119,7 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 
 #desktop
+obmenu
 openbox
 tint2
 w3m
