@@ -1,99 +1,55 @@
-## Openbox autostart
-## ====================
-## When you login to your BunsenLabs Openbox session, this autostart script
-## will be executed to set-up your environment and launch any applications
-## you want to run at startup.
-##
-## Note: some programs, such as 'nm-applet' are run via XDG autostart.
-## Run
-## /usr/lib/x86_64-linux-gnu/openbox-xdg-autostart --list
-## or
-## /usr/lib/i386-linux-gnu/openbox-xdg-autostart --list
-## to list any XDG autostarted programs.
-##
-## More information about this can be found at:
-## http://openbox.org/wiki/Help:Autostart
-##
-## If you do something cool with your autostart script and you think others
-## could benefit from your hack, please consider sharing it at:
-## http://forums.bunsenlabs.org (registration required)
-##
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
 
-### SETTINGS START
+# If you want to use GNOME config tools...
+#
+#if test -x /usr/lib/openbox/gnome-settings-daemon >/dev/null; then
+#  /usr/lib/openbox/gnome-settings-daemon &
+#elif which gnome-settings-daemon >/dev/null 2>&1; then
+#gnome-settings-daemon &
+#fi
 
-## Turn on/off system beep.
-xset b off
+# If you want to use XFCE config tools...
+#
+xfce-mcs-manager &
+
+compton -b --config ~/.config/compton.conf &
+
+tint2 &
+
+# Set background image
+(sleep 5; nitrogen --restore) &
 
 numlockx &
 
-xfsettingsd &
-
-## Set keyboard settings - 250 ms delay and 25 cps (characters per second) repeat rate.
-## Adjust the values according to your preferances.
-xset r rate 250 25
-
-## Add keyboard mapping.
-#xmodmap -e "keysym Insert = Multi_key"
-
-## Disable CapsLock
-setxkbmap -option ctrl:nocaps
-# alternative: use as compose key
-#setxkbmap -option compose:caps
-
-### TOUCHPAD: comment out the next two entries if you don't have one
-
-## Configure touchpad. See 'man synaptics' for more info.
-synclient VertEdgeScroll=1 HorizEdgeScroll=1 TapButton1=1 2>/dev/null
-
-## Disable touchpad while typing
-syndaemon -i .5 -K -t -R -d &
-
-### TOUCHPAD END
-
-### SETTINGS END
-
 ## GNOME PolicyKit authentication
-/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-
-## Compton
-## NOTE: composition must be started before tint2
-compton -b -c &
-
-## Start the tint2 session (the default tint2 will run if no sessions have been set)
-tint2 &
-
-## Set a wallpaper
-(sleep 5;nitrogen --restore) &
-
-## Start PulseAudio
-## (This replaces /etc/xdg/autostart/pulseaudio.desktop
-## which is disabled by ~/.config/autostart/pulseaudio.desktop.)
-## NOTE: PulseAudio must be started before volumeicon
-al-start-pulseaudio-x11
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 ## Volume control for systray
-(sleep 5; volumeicon) &
+(sleep 2; volti) &
 
-## Start the Conky session (the default conkyrc will run if no sessions have been set)
-al-conky-session --autostart &
+## Volume keys daemon
+xfce4-volumed &
 
-## Start the battery applet
-fdpowermon &
+## Turn off/on System Beep
+xset b off
 
-## Start Clipboard manager
-clipit &
+## Enable power management
+xfce4-power-manager &
 
-#(sleep 2; volti) &
+##Clipboard Manager
+(sleep 3; clipit) &
 
-(sleep 2; nm-applet) &
+## XFCE4 Settings
+xfsettingsd &
 
-#(sleep 2; gmrun) &
-
+## Start xscreensaver (light-locker now used by default, run via XDG autostart.)
 xscreensaver -no-splash &
 
-## al-welcome - post-installation script, will not run in a live session and
-## only runs once. Safe to remove.
-#(sleep 10; al-welcome --firstrun) &
+(sleep 5; nm-applet) &
 
-## al-fortune - have the system come up with a little adage (not yet enabled)
-#(sleep 120; al-fortune) &
+
+(sleep 2s && al-conky-session --autostart) &

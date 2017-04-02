@@ -144,6 +144,7 @@ vlc
 qt4
 
 
+
 # themes
 faenza-icon-theme
 bunsen-themes-git
@@ -227,3 +228,12 @@ wpa_actiond
 wvdial
 xl2tpd
 zd1211-firmware
+
+#Infinality Fonts
+
+docbook2x
+freetype2-infinality
+fontconfig-infinality
+xfce-slimlock
+
+

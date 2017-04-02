@@ -13,7 +13,7 @@ URxvt.letterSpace: -2
 URxvt.saveLines: 1000000
 URxvt.cursorBlink: 1
 
-URxvt.geometry: 72X18
+URxvt.geometry: 70X25
 
 ! Cursor
 urxvt*cursorColor: #DCDCCC
@@ -69,13 +69,7 @@ urxvt*background: rgba:0000/0000/0200/c800
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 
-rofi.modi:				ssh,window,drun,run
-rofi.sidebar-mode:		true
-rofi.terminal:			termite
-rofi.ssh-client: 		ssh
-rofi.ssh-command:       {terminal} -e "{ssh-client} {host}"
 rofi.font:              SFNS Display 13 
-rofi.columns:			1
 rofi.location:          0
 rofi.color-enabled:     true
 rofi.color-window:      argb:B3000000, argb:B3000000, argb:E6ffffff
@@ -91,4 +85,4 @@ rofi.line-margin:       5
 rofi.yoffset:           00
 rofi.xoffset:           0
 !rofi.width:            1920
-rofi.lines:             25                                                             
+rofi.lines:             18                                                              
