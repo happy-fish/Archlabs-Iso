@@ -14,10 +14,10 @@ set -e
 
 
 # cleaning tmp
-[ -d /tmp/archlabs ] && sudo rm -rf /tmp/archlabs
+[ -d ~/archlabs-build ] && sudo rm -rf ~/archlabs-build
 
-sudo git clone https://github.com/ARCHLabs/Archlabs-Iso /tmp/archlabs
-cd /tmp/archlabs/archiso/
+sudo git clone https://github.com/ARCHLabs/Archlabs-Iso ~/archlabs-build
+cd ~/archlabs-build/archiso/
 
 
 echo "################################################################"
@@ -35,4 +35,4 @@ echo "Making the Iso - confirm each time"
 sudo ./build.sh -v
 
 # cleaning tmp
-#[ -d /tmp/archlabs ] && rm -rf /tmp/archlabs
+#[ -d ~/archlabs-build ] && rm -rf ~/archlabs-build
