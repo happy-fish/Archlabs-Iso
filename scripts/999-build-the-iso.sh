@@ -23,6 +23,8 @@ echo "Deleting the build folder if one exists - takes some time"
 [ -d ~/archlabs-build ] && sudo rm -rf ~/archlabs-build
 
 sudo git clone https://github.com/ARCHLabs/Archlabs-Iso ~/archlabs-build
+echo "making sure everthing is root"
+sudo chown -R root:root ~/archlabs-build
 cd ~/archlabs-build/archiso/
 
 
