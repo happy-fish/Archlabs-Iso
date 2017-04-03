@@ -12,28 +12,16 @@ set -e
 #
 ##################################################################################################################
 
-echo "Files from Archlabs-Icon-Themes"
 
 
 echo "Removing old files/folders from folder"
-rm -rf ../archiso/airootfs/usr/share/icons/*
+rm -rf ../archiso/airootfs/usr/share/archlabs/docs/*
 echo "Copying new files/folders to folder from github"
-cp -r ../../Archlabs-Icon-Themes/* ../archiso/airootfs/usr/share/icons/
+cp -r ../../Archlabs-Help-Files/* ../archiso/airootfs/usr/share/archlabs/docs/
 echo "delete junk files"
-rm -rf ../archiso/airootfs/usr/share/icons/git-v*.sh
-rm -rf ../archiso/airootfs/usr/share/icons/README.md
+rm -rf ../archiso/airootfs/usr/share/archlabs/docs/git-v*.sh
+rm -rf ../archiso/airootfs/usr/share/archlabs/docs/README.md
 echo "Everything updated"
 
 
 
-echo "Files from Sardi-Mono-Archlabs"
-
-
-#echo "Removing old files/folders from folder"
-#rm -rf ../archiso/airootfs/usr/share/icons/*
-echo "Copying new files/folders to folder from github"
-cp -r ../../Sardi-Mono-Archlabs/* ../archiso/airootfs/usr/share/icons/
-echo "delete junk files"
-rm -rf ../archiso/airootfs/usr/share/icons/git-v*.sh
-rm -rf ../archiso/airootfs/usr/share/icons/README.md
-echo "Everything updated"
