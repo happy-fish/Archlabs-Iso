@@ -18,6 +18,7 @@ echo "into a root only environment"
 
 ../git-v2.sh
 
+echo "Deleting the build folder if one exists - takes some time"
 # cleaning tmp
 [ -d ~/archlabs-build ] && sudo rm -rf ~/archlabs-build
 
