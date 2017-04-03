@@ -12,7 +12,7 @@ Either edit "~/.config/openbox/menu.xml" using a text editor or use the obconf g
 (Links to more detailed info can be found in the Online Help for Openbox in the Help menu)
 
 
-HowTo edit a BunsenLabs pipemenu
+HowTo edit a ARCHLabs pipemenu
 ================================
 
 1)  For the Graphics, Multimedia and Browsers pipemenus:
@@ -39,7 +39,7 @@ OR
 
 	They have menu entries like:
 
-        menuItem 'Forum Basic Help & Support' 'chromium "https://plus.google.com/u/0/communities/101475477052908495908"'
+        menuItem 'Forum Basic Help & Support' 'x-www-browser "https://forums.ARCHlabs.org/viewforum.php?id=2"'
         
     The first element is the label, the second is the command to be run
     
