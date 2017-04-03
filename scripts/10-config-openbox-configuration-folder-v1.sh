@@ -13,9 +13,9 @@ set -e
 ##################################################################################################################
 
 
-echo "Removing old files/folders from conky folder"
+echo "Removing old files/folders from folder"
 rm -rf ../archiso/airootfs/etc/skel/.config/openbox/*
-echo "Copying new files/folders to conky folders from github"
+echo "Copying new files/folders to folders from github"
 cp -r ../../Archlabs-Openbox-Configs/* ../archiso/airootfs/etc/skel/.config/openbox/
 echo "delete junk files"
 rm -rf ../archiso/airootfs/etc/skel/.config/openbox/git-v*.sh

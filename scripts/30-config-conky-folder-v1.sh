@@ -13,9 +13,9 @@ set -e
 ##################################################################################################################
 
 
-echo "Removing old files/folders from conky folder"
+echo "Removing old files/folders from folder"
 rm -rf ../archiso/airootfs/etc/skel/.config/conky/*
-echo "Copying new files/folders to conky folders from github"
+echo "Copying new files/folders to folders from github"
 cp -r ../../Archlabs-Conky-New-Syntax/* ../archiso/airootfs/etc/skel/.config/conky/
 echo "delete junk files"
 rm -rf ../archiso/airootfs/etc/skel/.config/conky/git-v*.sh

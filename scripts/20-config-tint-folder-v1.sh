@@ -13,9 +13,9 @@ set -e
 ##################################################################################################################
 
 
-echo "Removing old files/folders from tint2 folder"
+echo "Removing old files/folders from folder"
 rm -rf ../archiso/airootfs/etc/skel/.config/tint2/*
-echo "Copying new files/folders to tint2 folders from github"
+echo "Copying new files/folders to folders from github"
 cp -r ../../Archlabs-Tint2/* ../archiso/airootfs/etc/skel/.config/tint2/
 echo "delete junk files"
 rm -rf ../archiso/airootfs/etc/skel/.config/tint2/git-v*.sh

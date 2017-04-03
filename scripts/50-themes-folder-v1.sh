@@ -12,12 +12,28 @@ set -e
 #
 ##################################################################################################################
 
+echo "Files from Archlabs-Arc-Themes"
+
 
 echo "Removing old files/folders from folder"
-rm -rf ../archiso/airootfs/usr/share/backgrounds/*
+rm -rf ../archiso/airootfs/usr/share/themes/*
 echo "Copying new files/folders to folder from github"
-cp -r ../../Archlabs-Wallpaper/* ../archiso/airootfs/usr/share/backgrounds/
+cp -r ../../Archlabs-Arc-Themes/* ../archiso/airootfs/usr/share/themes/
 echo "delete junk files"
-rm -rf ../archiso/airootfs/usr/share/backgrounds/git-v*.sh
-rm -rf ../archiso/airootfs/usr/share/backgrounds/README.md
+rm -rf ../archiso/airootfs/usr/share/themes/git-v*.sh
+rm -rf ../archiso/airootfs/usr/share/themes/README.md
+echo "Everything updated"
+
+
+
+echo "Files from Archlabs-Bunsen-Themes-Dev"
+
+
+#echo "Removing old files/folders from folder"
+#rm -rf ../archiso/airootfs/usr/share/themes/*
+echo "Copying new files/folders to folder from github"
+cp -r ../../Archlabs-Bunsen-Themes-Dev/* ../archiso/airootfs/usr/share/themes/
+echo "delete junk files"
+rm -rf ../archiso/airootfs/usr/share/themes/git-v*.sh
+rm -rf ../archiso/airootfs/usr/share/themes/README.md
 echo "Everything updated"
