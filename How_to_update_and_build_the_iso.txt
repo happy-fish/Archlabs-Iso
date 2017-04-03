@@ -23,6 +23,6 @@ IF you have changed something locally, remember to push it with ./git-vx.sh to t
 Go inside the folder "scripts" and run one by one the scripts from small numbering to big.
 
 
-The scripts assumes all githubs are in the same directory "ARCHLABS" and will get all updated information and put it in the archiso github.
+The scripts assume that all githubs are in the same directory "ARCHLABS" and will get all updated information and put it in the archiso github.
 
 You should update all githubs before building the iso!!
