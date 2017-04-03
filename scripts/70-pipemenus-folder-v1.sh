@@ -19,6 +19,7 @@ echo "Copying new files/folders to folder from github"
 cp -r ../../Archlabs-Pipemenus/* ../archiso/airootfs/usr/bin/
 echo "making executable"
 chmod u+x ../archiso/airootfs/usr/bin/al*
+chmod u+x ../archiso/airootfs/usr/bin/cleanup.sh
 echo "delete junk files"
 rm -rf ../archiso/airootfs/usr/bin/git-v*.sh
 rm -rf ../archiso/airootfs/usr/bin/README.md
