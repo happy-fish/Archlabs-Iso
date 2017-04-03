@@ -13,6 +13,8 @@ set -e
 ##################################################################################################################
 
 echo "First we are going to upload all changes to the github"
+echo "Since we are building straight from github"
+echo "into a root only environment"
 
 ../git-v2.sh
 
