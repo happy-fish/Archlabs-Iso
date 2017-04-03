@@ -12,6 +12,9 @@ set -e
 #
 ##################################################################################################################
 
+echo "First we are going to upload all changes to the github"
+
+../git-v2.sh
 
 # cleaning tmp
 [ -d ~/archlabs-build ] && sudo rm -rf ~/archlabs-build
