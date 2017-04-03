@@ -1,0 +1,28 @@
+Scripts to assist us in various tasks
+
+
+Scripts are there to take care of all repetitive tasks to create an iso like
+
+	- getting latest info from Archlabs-Openbox-Config and putting it in skel
+	- getting latest info from Archlabs-Conky-New-Syntax and putting it in skel
+	- getting latest info from Archlabs-Tint2 and putting it in skel
+	- creating an iso 
+
+
+
+Setup in order to make an iso
+
+
+Make a directory with the name "ARCHLABS" on your home directory.
+
+Copy/paste the script "update-archlabs-gits-v1.sh" to it and run it. You will get all the archlabs githubs you need.
+On a later date you can run it again and the script will update your local githubs.
+IF you have changed something locally, remember to push it with ./git-vx.sh to the net.
+
+
+Go inside the folder "scripts" and run one by one the scripts from small numbering to big.
+
+
+The scripts assumes all githubs are in the same directory "ARCHLABS" and will get all updated information and put it in the archiso github.
+
+You should update all githubs before building the iso!!
