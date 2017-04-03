@@ -17,6 +17,8 @@ echo "Removing old files/folders from folder"
 rm -rf ../archiso/airootfs/usr/bin/*
 echo "Copying new files/folders to folder from github"
 cp -r ../../Archlabs-Pipemenus/* ../archiso/airootfs/usr/bin/
+echo "making executable"
+chmod u+x ../archiso/airootfs/usr/bin/al*
 echo "delete junk files"
 rm -rf ../archiso/airootfs/usr/bin/git-v*.sh
 rm -rf ../archiso/airootfs/usr/bin/README.md
