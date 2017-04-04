@@ -1,35 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
-	<menu id="exit-menu" label="Exit">
-		<item label="Log out">
-			<action name="Execute">
-				<command>
-                    al-exit --logout
-                </command>
-			</action>
-		</item>
-		<item label="Suspend">
-			<action name="Execute">
-				<command>
-                    al-exit --suspend
-                </command>
-			</action>
-		</item>
-		<item label="Reboot">
-			<action name="Execute">
-				<command>
-                    al-exit --reboot
-                </command>
-			</action>
-		</item>
-		<item label="Power off">
-			<action name="Execute">
-				<command>
-                    al-exit --poweroff
-                </command>
-			</action>
-		</item>
-	</menu>
 	<menu id="root-menu" label="Openbox 3">
 		<item label="Run Program">
 			<action name="Execute">
@@ -269,7 +239,7 @@
 					<command>geany</command>
 				</action>
 			</item>
-		</menu>		
+		</menu>
 		<separator/>
 		<menu execute="/usr/bin/al-places-pipemenu" id="pipe-placesmenu" label="Places"/>
 		<menu execute="/usr/bin/al-recent-files-pipemenu" id="pipe-recentfilesmenu" label="Recent Files"/>
@@ -338,6 +308,13 @@
                     </command>
 				</action>
 			</item>
+			<item label="Xfce4 Appearance">
+				<action name="Execute">
+					<command>
+                       xfce4-appearance-settings
+                    </command>
+				</action>
+			</item>
 			<item label="Tint2 GUI">
 				<action name="Execute">
 					<command>
@@ -368,10 +345,19 @@
 			</item>
 			<item label="Notifications">
 				<action name="Execute">
-					<command>xfce4-notifyd-config</command>
+					<command>
+						xfce4-notifyd-config
+					</command>
 				</action>
 			</item>
 			<separator/>
+			<item label="Preferred Applications">
+				<action name="Execute">
+					<command>
+                        exo-preferred-applications
+                    </command>
+				</action>
+			</item>
 			<item label="Power Management">
 				<action name="Execute">
 					<command>
@@ -379,24 +365,20 @@
                     </command>
 				</action>
 			</item>
-			<menu id="dmenu" label="Dmenu">
-				<item label="Dmenu">
-					<action name="Execute">
-						<command>
-                           dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
-                        </command>
-					</action>
-				</item>
-			</menu>
-			<menu id="DisplaySettings" label="Display">
-				<item label="ARandR Screen Layout Editor">
-					<action name="Execute">
-						<command>
-                            arandr
-                        </command>
-					</action>
-				</item>
-			</menu>
+			<item label="Dmenu">
+				<action name="Execute">
+					<command>
+                        dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+                     </command>
+				</action>
+			</item>
+			<item label="ARandR Screen Layout Editor">
+				<action name="Execute">
+					<command>
+                        arandr
+                    </command>
+				</action>
+			</item>
 		</menu>
 		<menu id="system" label="System">
 			<item label="Pamac Package Manager">

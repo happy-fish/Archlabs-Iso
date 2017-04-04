@@ -22,9 +22,21 @@ echo "Deleting the build folder if one exists - takes some time"
 # cleaning tmp
 [ -d ~/archlabs-build ] && sudo rm -rf ~/archlabs-build
 
-sudo git clone https://github.com/ARCHLabs/Archlabs-Iso ~/archlabs-build
-echo "making sure everthing is root"
-sudo chown -R root:root ~/archlabs-build
+# making sure there is no folder in tmp
+[ -d /tmp/Archlabs-Iso ] && sudo rm -rf /tmp/Archlabs-Iso
+
+#testing this code for obmenu
+git clone https://github.com/ARCHLabs/Archlabs-Iso /tmp/Archlabs-Iso
+sudo cp -r /tmp/Archlabs-Iso ~/archlabs-build
+
+rm -rf /tmp/archlabs-build
+#echo "making sure everthing is root"
+#sudo chown -R root:root ~/archlabs-build
+
+
+#sudo git clone https://github.com/ARCHLabs/Archlabs-Iso ~/archlabs-build
+#echo "making sure everthing is root"
+#sudo chown -R root:root ~/archlabs-build
 cd ~/archlabs-build/archiso/
 
 

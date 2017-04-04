@@ -4,7 +4,7 @@ set -e -u
 
 iso_name=archlabs
 iso_label="archlabs-$(date +%Y%m)-x86_64"
-iso_version=$(date +%Y.%m.%d)
+iso_version="3.3.8-$(date +%Y.%m.%d)"
 install_dir=arch
 work_dir=work
 out_dir=out
@@ -213,7 +213,7 @@ make_prepare() {
 
 # Build ISO
 make_iso() {
-    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -o "${out_dir}" iso "${iso_name}-${iso_version}-.iso"
+    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -o "${out_dir}" iso "${iso_name}-${iso_version}.iso"
 }
 
 if [[ ${EUID} -ne 0 ]]; then
