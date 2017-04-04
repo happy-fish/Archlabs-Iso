@@ -147,6 +147,7 @@ volumeicon
 w3m
 xfce4-notifyd
 xfce4-screenshooter
+xfce4-settings-manager
 
 #Fix gtk themes
 gtk3-nocsd-git
