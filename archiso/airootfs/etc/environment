@@ -4,3 +4,15 @@
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
 QT_QPA_PLATFORMTHEME=qt5ct
+
+# midfingr idea  - test
+
+BROWSER=chromium
+
+DESKTOP_SESSION=openbox
+
+EDITOR=geany
+
+SHELL=/bin/bash
+
+XDG_SESSION_DESKTOP=openbox
