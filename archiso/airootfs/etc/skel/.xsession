@@ -7,3 +7,5 @@
 #
 
 /bin/zsh --login -i ~/.xinitrc
+
+#exec openbox-session
