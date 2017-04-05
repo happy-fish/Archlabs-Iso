@@ -119,7 +119,7 @@ xfce4-screenshooter
 xfce4-settings
 xfce-slimlock
 
-#desktop manager
+#lightdm
 lightdm 
 lightdm-gtk-greeter 
 lightdm-gtk-greeter-settings
@@ -145,7 +145,7 @@ thunar-volman
 tumbler
 xdg-user-dirs
 
-# Lxappearance
+#lxappearance
 lxappearance
 lxappearance-obconf
 lxmenu-data
@@ -258,15 +258,14 @@ gtk-theme-arc-grey-git
 #installer
 wipe
 
-# fonts
+#fonts
 terminus-font
 ttf-dejavu 
 ttf-droid-font
 ttf-monaco
 cantarell-fonts
 
-
-#Infinality Fonts
+#infinality fonts
 docbook2x
 freetype2-infinality
 fontconfig-infinality
