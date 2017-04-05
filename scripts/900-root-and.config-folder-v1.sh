@@ -22,8 +22,8 @@ echo "Updating the root folder"
 echo "Copying new files/folders to folder from github"
 cp -r ../../Archlabs-Other-Config-Files/root/. ../archiso/airootfs/etc/skel/
 echo "delete junk files"
-rm -rf ../archiso/airootfs/etc/skel/.config/git-v*.sh
-rm -rf ../archiso/airootfs/etc/skel/.config/README.md
+#rm -rf ../archiso/airootfs/etc/skel/.config/git-v*.sh
+#rm -rf ../archiso/airootfs/etc/skel/.config/README.md
 echo "Everything updated"
 
 
