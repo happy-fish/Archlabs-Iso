@@ -1,10 +1,26 @@
-#keep it alphabetical please
-#video and audio
+#######################
+##     ARCHLabs      ##
+#######################
+
+##########################################
+#keep it alphabetical and organised please
+##########################################
+
+#xorg packages
+xorg-server 
+xorg-server-utils 
+xorg-twm 
+xorg-xinit
+xorg-xprop
+xterm 
+
+#audio
 alsa-utils
-intel-ucode
-mesa
 pulseaudio 
 pulseaudio-alsa
+
+#video
+mesa
 xf86-input-evdev
 xf86-input-keyboard
 xf86-input-libinput
@@ -21,15 +37,19 @@ xf86-video-sisusb
 xf86-video-vesa
 xf86-video-vmware
 xf86-video-voodoo
-xorg-server 
-xorg-server-utils 
-xorg-twm xterm 
-xorg-xinit 
+
 
 #base
 base
 base-devel
 gnome-keyring
+
+#network
+networkmanager 
+network-manager-applet 
+networkmanager-dispatcher-ntpd
+wireless_tools
+wpa_supplicant
 
 #vbox
 virtualbox-guest-modules-arch
@@ -62,6 +82,7 @@ gvfs
 hexchat
 htop
 inkscape
+intel-ucode
 intltool
 iw 
 libmtp gvfs-mtp 
@@ -159,11 +180,6 @@ faenza-icon-theme
 gtk-theme-arc-grey-git
 ttf-droid-font
 ttf-monaco
-
-#network
-networkmanager 
-network-manager-applet 
-networkmanager-dispatcher-ntpd
 
 # installer
 wipe
