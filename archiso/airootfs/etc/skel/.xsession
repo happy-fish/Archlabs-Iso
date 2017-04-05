@@ -8,4 +8,4 @@
 
 #/bin/zsh --login -i ~/.xinitrc
 
-exec openbox-session
+#exec openbox-session
