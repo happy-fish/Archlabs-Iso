@@ -18,6 +18,8 @@ xterm
 alsa-utils
 pulseaudio 
 pulseaudio-alsa
+pavucontrol
+volumeicon
 
 #video
 mesa
@@ -81,14 +83,13 @@ gnome-keyring
 gnumeric
 gparted
 gpicview
-gvfs 
 hexchat
 htop
 inkscape
 intel-ucode
 intltool
 iw 
-libmtp gvfs-mtp 
+libmtp  
 libreoffice-fresh
 laptop-detect
 lxrandr
@@ -105,7 +106,6 @@ opera
 p7zip
 pacaur
 pamac-aur
-pavucontrol
 polkit-gnome
 python2-dbus
 qt5ct
@@ -121,11 +121,20 @@ unrar
 viewnior
 webkitgtk
 wget
-xdg-user-dirs 
 xfburn
 yad
 yaourt
 zenity
+
+#file management
+gvfs
+gvfs-mtp
+thunar
+thunar-archive-plugin
+thunar-volman
+tumbler
+xdg-user-dirs 
+
 
 # LxAppearance
 lxappearance
@@ -161,10 +170,8 @@ qt4
 scrot
 terminus-font
 termite
-thunar
 tint2
 vlc
-volumeicon
 w3m
 xfce4-notifyd
 xfce4-power-manager
