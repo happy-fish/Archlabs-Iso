@@ -119,6 +119,13 @@ xfce4-screenshooter
 xfce4-settings
 xfce-slimlock
 
+#openbox
+openbox
+obconf
+obkey
+oblogout
+obmenu
+
 #lightdm
 lightdm 
 lightdm-gtk-greeter 
@@ -146,7 +153,6 @@ tumbler
 xdg-user-dirs
 
 #lxappearance
-lxappearance
 lxappearance-obconf
 lxmenu-data
 lxrandr
@@ -177,12 +183,10 @@ libreoffice-fresh
 neofetch
 nitrogen
 numlockx
-obconf
-oblogout
-obmenu
-openbox
+openshot
 opera
 qt4
+recordmydesktop
 scrot
 simplescreenrecorder
 smplayer
@@ -217,9 +221,7 @@ libmtp
 laptop-detect
 lxrandr
 mlocate 
-obkey
 oomox
-openshot
 p7zip
 pacaur
 pamac-aur
@@ -227,7 +229,6 @@ polkit-gnome
 python2-dbus
 qt5ct
 qt5-styleplugins
-recordmydesktop
 reflector 
 rsync 
 rxvt-unicode
