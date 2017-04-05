@@ -217,6 +217,7 @@ linux-atm
 lsscsi
 mc
 mtools
+ncdu
 ndisc6
 nfs-utils
 nilfs-utils
