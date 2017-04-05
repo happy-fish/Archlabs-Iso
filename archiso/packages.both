@@ -181,10 +181,14 @@ obconf
 oblogout
 obmenu
 openbox
+opera
 qt4
 scrot
+simplescreenrecorder
+smplayer
 termite
 tint2
+transmission-gtk
 vlc
 w3m
 
@@ -216,7 +220,6 @@ mlocate
 obkey
 oomox
 openshot
-opera
 p7zip
 pacaur
 pamac-aur
@@ -228,9 +231,7 @@ recordmydesktop
 reflector 
 rsync 
 rxvt-unicode
-smplayer
 squashfs-tools
-transmission-gtk
 unrar
 viewnior
 webkitgtk
