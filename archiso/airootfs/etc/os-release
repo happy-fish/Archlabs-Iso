@@ -2,5 +2,5 @@ NAME="ArchLabs"
 ID=arch
 PRETTY_NAME="ArchLabs"
 ANSI_COLOR="0;36"
-VERSION_ID=3.3.5
+VERSION_ID=3.3.6
 HOME_URL="https://github.com/ARCHLabs/Archlabs-Iso"
