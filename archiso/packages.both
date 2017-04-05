@@ -6,6 +6,14 @@
 #keep it alphabetical and organised please
 ##########################################
 
+#xorg packages
+xorg-server 
+xorg-server-utils 
+xorg-twm 
+xorg-xinit
+xorg-xprop
+xterm 
+
 #video
 mesa
 xf86-input-evdev
@@ -104,14 +112,6 @@ zd1211-firmware
 #packages for installer
 wipe
 #xinit-xsession
-
-#xorg packages
-xorg-server 
-xorg-server-utils 
-xorg-twm 
-xorg-xinit
-xorg-xprop
-xterm 
 
 #audio
 alsa-utils
