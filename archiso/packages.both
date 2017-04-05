@@ -78,6 +78,9 @@ wvdial
 xl2tpd
 zd1211-firmware
 
+#packages for installer
+wipe
+
 #xorg packages
 xorg-server 
 xorg-server-utils 
@@ -251,9 +254,6 @@ bunsen-themes-git
 faenza-icon-theme
 gnome-icon-theme
 gtk-theme-arc-grey-git
-
-#installer
-wipe
 
 #fonts
 noto-fonts
