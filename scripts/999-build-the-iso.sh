@@ -25,6 +25,7 @@ echo "Deleting the build folder if one exists - takes some time"
 #testing this code for obmenu
 git clone https://github.com/ARCHLabs/Archlabs-Iso /tmp/Archlabs-Iso
 sudo cp -r /tmp/Archlabs-Iso ~/archlabs-build
+rm -rf /tmp/Archlabs-Iso
 rm -rf /tmp/archlabs-build
 #echo "making sure everthing is root"
 #sudo chown -R root:root ~/archlabs-build
