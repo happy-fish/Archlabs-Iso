@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
 	<menu id="root-menu" label="Openbox 3">
 		<item label="Run Program">
 			<action name="Execute">
@@ -339,19 +339,22 @@
 			<item label="Choose Wallpaper">
 				<action name="Execute">
 					<command>
-                        nitrogen			<item label="Power Management">
+                        nitrogen
+                    </command>
+				</action>                    			
+			</item>
+             <item label="Power Management">
 				<action name="Execute">
 					<command>
                         xfce4-power-manager-settings
                     </command>
 				</action>
 			</item>
-                    </command>
-				</action>
-			</item>
 			<item label="Notifications">
 				<action name="Execute">
-					<command>xfce4-notifyd-config</command>
+					<command>
+						xfce4-notifyd-config
+					</command>
 				</action>
 			</item>
 			<separator/>
@@ -372,15 +375,15 @@
 			<item label="Dmenu">
 				<action name="Execute">
 					<command>
-                          dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
-                       </command>
+                        dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+                     </command>
 				</action>
 			</item>
 			<item label="ARandR Screen Layout Editor">
 				<action name="Execute">
 					<command>
-                           arandr
-                       </command>
+                        arandr
+                    </command>
 				</action>
 			</item>
 		</menu>
