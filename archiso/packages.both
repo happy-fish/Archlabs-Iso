@@ -168,6 +168,7 @@ xfce4-notifyd
 xfce4-power-manager
 xfce4-screenshooter
 xfce4-settings
+xfce-slimlock
 
 #Fix gtk themes
 gtk3-nocsd-git
@@ -256,5 +257,3 @@ zd1211-firmware
 docbook2x
 freetype2-infinality
 fontconfig-infinality
-xfce-slimlock
-gmrun
