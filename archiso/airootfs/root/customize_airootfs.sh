@@ -27,7 +27,7 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 #sed -i 's/exec openbox-session/#exec openbox-session/' ~/.xinitrc
 #sed -i 's/#exec openbox-session/exec openbox-session/' ~/.xsession
 
-systemctl enable pacman-init.service choose-mirror.service NetworkManager.service lightdm.service
+systemctl enable pacman-init.service choose-mirror.service NetworkManager.service
 systemctl set-default multi-user.target
 pacman -Syy
 gpg --receive-keys C1A60EACE707FDA5
