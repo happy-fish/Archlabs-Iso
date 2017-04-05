@@ -80,6 +80,7 @@ zd1211-firmware
 
 #packages for installer
 wipe
+xinit-xsession
 
 #xorg packages
 xorg-server 
