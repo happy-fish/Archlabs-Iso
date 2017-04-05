@@ -240,6 +240,7 @@ sdparm
 sg3_utils
 smartmontools
 speedtouch
+speedtest-cli
 sudo
 tcpdump
 testdisk
