@@ -89,6 +89,7 @@ intltool
 iw 
 libmtp gvfs-mtp 
 libreoffice-fresh
+laptop-detect
 lxrandr
 lynx
 mirage
