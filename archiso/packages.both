@@ -6,10 +6,33 @@
 #keep it alphabetical and organised please
 ##########################################
 
+#video
+mesa
+xf86-input-evdev
+xf86-input-keyboard
+xf86-input-libinput
+xf86-input-mouse
+xf86-input-synaptics
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-dummy
+xf86-video-fbdev
+xf86-video-intel
+xf86-video-nouveau
+xf86-video-openchrome
+xf86-video-sisusb
+xf86-video-vesa
+xf86-video-vmware
+xf86-video-voodoo
+
 
 #base
 base
 base-devel
+
+#vbox
+virtualbox-guest-modules-arch
+virtualbox-guest-utils
 
 #archiso
 arch-install-scripts
@@ -97,25 +120,6 @@ pulseaudio-alsa
 pavucontrol
 volumeicon
 
-#video
-mesa
-xf86-input-evdev
-xf86-input-keyboard
-xf86-input-libinput
-xf86-input-mouse
-xf86-input-synaptics
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-dummy
-xf86-video-fbdev
-xf86-video-intel
-xf86-video-nouveau
-xf86-video-openchrome
-xf86-video-sisusb
-xf86-video-vesa
-xf86-video-vmware
-xf86-video-voodoo
-
 #xfce4
 xfce4-notifyd
 xfce4-power-manager
@@ -134,10 +138,6 @@ obmenu
 lightdm 
 lightdm-gtk-greeter 
 lightdm-gtk-greeter-settings
-
-#vbox
-virtualbox-guest-modules-arch
-virtualbox-guest-utils
 
 #network
 networkmanager 
