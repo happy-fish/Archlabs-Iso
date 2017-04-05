@@ -42,7 +42,7 @@ xf86-video-voodoo
 #base
 base
 base-devel
-gnome-keyring
+
 
 #network
 networkmanager 
@@ -77,6 +77,7 @@ gigolo
 gimp
 git 
 gksu
+gnome-keyring
 gnumeric
 gparted
 gpicview
@@ -178,8 +179,8 @@ lib32-libgtk3-nocsd-git
 
 # themes
 bunsen-themes-git
-clipit-gtk3
 faenza-icon-theme
+gnome-icon-theme
 gtk-theme-arc-grey-git
 ttf-droid-font
 ttf-monaco
