@@ -49,6 +49,7 @@ networkmanager
 network-manager-applet 
 networkmanager-dispatcher-ntpd
 wireless_tools
+wpa_actiond
 wpa_supplicant
 
 #vbox
@@ -118,7 +119,6 @@ unrar
 viewnior
 webkitgtk
 wget
-wpa_supplicant 
 xdg-user-dirs 
 xfburn
 yad
@@ -246,8 +246,6 @@ usb_modeswitch
 vim-minimal
 vpnc
 wget
-wireless_tools
-wpa_actiond
 wvdial
 xl2tpd
 zd1211-firmware
