@@ -117,7 +117,6 @@ rxvt-unicode
 smplayer
 squashfs-tools
 transmission-gtk
-ttf-dejavu 
 unrar
 viewnior
 webkitgtk
@@ -182,8 +181,6 @@ bunsen-themes-git
 faenza-icon-theme
 gnome-icon-theme
 gtk-theme-arc-grey-git
-ttf-droid-font
-ttf-monaco
 
 # installer
 wipe
@@ -253,8 +250,14 @@ wvdial
 xl2tpd
 zd1211-firmware
 
-#Infinality Fonts
+# fonts
+ttf-dejavu 
+ttf-droid-font
+ttf-monaco
+cantarell-fonts
 
+
+#Infinality Fonts
 docbook2x
 freetype2-infinality
 fontconfig-infinality
