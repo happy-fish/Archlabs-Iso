@@ -24,8 +24,8 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 #solving obmenu crash
-sed -i 's/exec openbox-session/#exec openbox-session/' ~/.xinitrc
-sed -i 's/#exec openbox-session/exec openbox-session/' ~/.xsession
+#sed -i 's/exec openbox-session/#exec openbox-session/' ~/.xinitrc
+#sed -i 's/#exec openbox-session/exec openbox-session/' ~/.xsession
 
 systemctl enable pacman-init.service choose-mirror.service NetworkManager.service
 systemctl set-default multi-user.target
