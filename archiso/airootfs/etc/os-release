@@ -1,4 +1,6 @@
 NAME="ArchLabs"
 ID=arch
+VERSION_ID=3.3.8
+PRETTY_NAME="Victory"
 PRETTY_NAME="ArchLabs"
 ANSI_COLOR="0;36"
