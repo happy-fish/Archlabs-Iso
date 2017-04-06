@@ -38,9 +38,7 @@ read -p "In order to build an iso we need to clean your cache (y/n)?" choice
 	esac
 
 
-echo "Making the Iso - confirm each time"
+echo "Making the Iso"
 
 sudo ./build.sh -v
-
-# cleaning tmp
-#[ -d ~/archlabs-build ] && rm -rf ~/archlabs-build
+ 
