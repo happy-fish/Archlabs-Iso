@@ -7,7 +7,7 @@
 ##########################################
 
 #xorg packages
-xkill
+#xkill
 xorg-server 
 xorg-server-utils 
 xorg-twm 
