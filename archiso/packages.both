@@ -258,6 +258,9 @@ faenza-icon-theme
 gnome-icon-theme
 gtk-theme-arc-grey-git
 
+#cursors
+breeze-snow-cursor-theme
+
 #fonts
 noto-fonts
 noto-fonts-cjk
