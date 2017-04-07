@@ -26,7 +26,7 @@ print_info() {
     #info "WM Theme" wm_theme
     info "Theme" theme
     info "Icons" icons
-    #info "Terminal" term
+    info "Terminal" term
     #info "Terminal Font" term_font
     #info "CPU" cpu
     #info "GPU" gpu
@@ -637,8 +637,8 @@ gap=3
 # Values:  'px'
 # Flags:   --xoffset
 #          --yoffset
-yoffset=0
-xoffset=0
+yoffset=20
+xoffset=20
 
 # Image background color
 # Only works with the w3m backend.

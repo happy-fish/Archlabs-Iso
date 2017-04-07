@@ -1,4 +1,4 @@
-FileManager=thunar
+FileManager=Thunar
 TerminalEmulator=termite
-WebBrowser=chromium
+WebBrowser=firefox
 

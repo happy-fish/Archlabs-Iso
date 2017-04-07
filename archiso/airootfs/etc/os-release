@@ -1,7 +1,9 @@
 NAME="ArchLabs"
-ID=arch
-VERSION_ID=3.3.8
-PRETTY_NAME="Victory"
-PRETTY_NAME="ArchLabs"
+ID=archlabs
+ID_LIKE="arch"
+VERSION_ID=v.3.6.0
+PRETTY_NAME="ARCHLabs"
 ANSI_COLOR="0;36"
-HOME_URL="https://archlabsblog.wordpress.com/"
+HOME_URL="https://archlabsblog.wordpress.com"
+SUPPORT_URL="http://archlabs.prophpbb.com"
+BUG_REPORT_URL="https://github.com/ARCHLabs"
