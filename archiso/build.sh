@@ -4,7 +4,7 @@ set -e -u
 
 iso_name=archlabs
 iso_label="archlabs-$(date +%Y%m)-x86_64"
-iso_version="3.3.8-$(date +%Y.%m.%d)"
+iso_version="3.4.0-$(date +%Y.%m.%d)"
 install_dir=arch
 work_dir=work
 out_dir=out
