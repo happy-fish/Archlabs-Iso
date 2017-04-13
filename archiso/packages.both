@@ -254,8 +254,8 @@ yaourt
 zenity
 
 #fix gtk themes
-gtk3-nocsd-git
-lib32-libgtk3-nocsd-git
+#gtk3-nocsd-git
+#lib32-libgtk3-nocsd-git
 
 #themes
 bunsen-themes-git
