@@ -136,6 +136,7 @@ obconf
 obkey
 oblogout
 obmenu
+obmenu-generator
 
 #lightdm
 lightdm 
