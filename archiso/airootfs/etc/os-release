@@ -1,7 +1,6 @@
 NAME="ArchLabs"
 ID=arch
-VERSION_ID=3.4.0
-PRETTY_NAME="Victory"
-PRETTY_NAME="ArchLabs"
+VERSION_ID=3.4.1
+PRETTY_NAME="Sublime"
 ANSI_COLOR="0;36"
 HOME_URL="https://archlabsblog.wordpress.com/"
