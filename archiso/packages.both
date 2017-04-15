@@ -263,6 +263,7 @@ zenity
 #lib32-libgtk3-nocsd-git
 
 #themes
+arc-gtk-theme
 bunsen-themes-git
 faenza-icon-theme
 gnome-icon-theme
