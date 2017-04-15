@@ -61,13 +61,6 @@ git pull
 echo $(basename `pwd`)" done"
 cd ..
 
-# if there is no folder then make one
-[ -d $HOME"/ARCHLABS/Archlabs-Exit" ] || git clone https://github.com/ARCHLabs/Archlabs-Exit
-
-cd Archlabs-Exit
-git pull
-echo $(basename `pwd`)" done"
-cd ..
 
 # if there is no folder then make one
 [ -d $HOME"/ARCHLABS/Archlabs-Help-Files" ] || git clone https://github.com/ARCHLabs/Archlabs-Help-Files
@@ -113,6 +106,14 @@ cd ..
 [ -d $HOME"/ARCHLABS/Archlabs-Pipemenus" ] || git clone https://github.com/ARCHLabs/Archlabs-Pipemenus
 
 cd Archlabs-Pipemenus
+git pull
+echo $(basename `pwd`)" done"
+cd ..
+
+# if there is no folder then make one
+[ -d $HOME"/ARCHLABS/archlabs_repo" ] || git clone https://github.com/ARCHLabs/archlabs_repo
+
+cd archlabs_repo
 git pull
 echo $(basename `pwd`)" done"
 cd ..
