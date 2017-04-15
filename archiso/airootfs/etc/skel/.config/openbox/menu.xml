@@ -379,8 +379,15 @@
                     </command>
 				</action>
 			</item>
+			<item label="Printing">
+				<action name="Execute">
+					<command>
+                        system-config-printer
+                    </command>
+				</action>
+			</item>			
 		</menu>
-		<menu id="system" label="System">
+		<menu id="system-settings" label="System Settings">
 			<item label="Pamac Package Manager">
 				<action name="Execute">
 					<command>

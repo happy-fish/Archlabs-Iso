@@ -65,7 +65,7 @@ our $SCHEMA = [
 
     {sep => undef},
     {pipe => ['al-places-pipemenu',         'Places',       'folder']},
-    {pipe => ['al-recent-files-pipemenu',   'Recent files', 'folder-recent']},
+    {pipe => ['al-recent-files-pipemenu',   'Recent Files', 'folder-recent']},
 
     ## Custom advanced settings
     #{sep => "Settings"},
@@ -89,7 +89,7 @@ our $SCHEMA = [
             {item => ['openbox --restart',                      'Restart Openbox',               'openbox']},
             {item => ['openbox --reconfigure',                  'Reconfigure Openbox',           'openbox']},
         {end_cat => undef},
-        {pipe => ['al-compositor',      'Compton',      'compton']},
+        {pipe => ['al-compositor',      'Compositor',      'compton']},
         {pipe => ['al-conky-pipemenu',  'Conky',        'conky']},
         {pipe => ['al-tint2-pipemenu',  'Tint2',        'tint2']},
         {item => ['tint2conf',          'Tint2 GUI',    'tint2conf']},        
@@ -100,6 +100,7 @@ our $SCHEMA = [
         {item => ['gksudo lightdm-gtk-greeter-settings',    'LightDM Appearance',       'theme']},
         {item => ['nitrogen',                               'Choose wallpaper',         'nitrogen']},
         {item => ['xfce4-notifyd-config',                   'Notifications',            'notifications']},
+        {sep => undef},
         {item => ['exo-preferred-applications',             'Preferred Applications',   'preferred-applications']},
         {item => ['xfce4-power-manager-settings',           'Power Management',         'power']},
         {item => ["dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'", 'Dmenu', 'alacarte']},
