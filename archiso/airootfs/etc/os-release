@@ -1,6 +1,6 @@
 NAME="ArchLabs"
-ID=arch
-VERSION_ID=3.4.3
+ID=archlabs
+VERSION_ID=3.4.4
 PRETTY_NAME="ARCHLabs"
 ANSI_COLOR="0;36"
 HOME_URL="https://archlabsblog.wordpress.com/"
