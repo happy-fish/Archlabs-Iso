@@ -17,6 +17,8 @@ echo "Removing old files/folders from folder"
 rm -rf ../archiso/airootfs/etc/skel/.config/tint2/*
 echo "Copying new files/folders to folders from github"
 cp -r ../../Archlabs-Tint2/* ../archiso/airootfs/etc/skel/.config/tint2/
+echo "copying personal tint2 files to /usr/share/tint2"
+cp -r ../../Archlabs-Tint2/themes/archlabs* ../archiso/airootfs/usr/share/tint2/
 echo "delete junk files"
 rm -rf ../archiso/airootfs/etc/skel/.config/tint2/git-v*.sh
 rm -rf ../archiso/airootfs/etc/skel/.config/tint2/README.md
