@@ -173,7 +173,7 @@ mouse_scroll_down = iconify
 systray_padding = 4 2 3
 systray_background_id = 0
 systray_sort = right2left
-systray_icon_size = 24
+systray_icon_size = 22
 systray_icon_asb = 100 0 0
 systray_monitor = 1
 systray_name_filter = 
@@ -190,10 +190,6 @@ launcher_icon_theme_override = 0
 startup_notifications = 0
 launcher_tooltip = 1
 launcher_item_app = /usr/share/applications/calamares.desktop
-launcher_item_app = /usr/share/applications/chromium.desktop
-launcher_item_app = /usr/share/applications/Thunar.desktop
-launcher_item_app = /usr/share/applications/geany.desktop
-launcher_item_app = /usr/share/applications/termite.desktop
 
 #-------------------------------------
 # Clock
