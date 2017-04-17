@@ -241,6 +241,7 @@ pacaur
 pamac-aur
 plank
 playerctl
+polkit
 polkit-gnome
 python2-dbus
 qt5ct
