@@ -26,14 +26,27 @@ echo "Everything updated"
 
 
 
-echo "Files from Sardi-Mono-Archlabs"
+# sardi mono archlabs has been incorporated in sardi icons on sourceforge
+#echo "Files from Sardi-Mono-Archlabs"
+# #echo "Removing old files/folders from folder"
+# #rm -rf ../archiso/airootfs/usr/share/icons/*
+# echo "Copying new files/folders to folder from github"
+# cp -r ../../Sardi-Mono-Archlabs/* ../archiso/airootfs/usr/share/icons/
+# echo "delete junk files"
+# rm -rf ../archiso/airootfs/usr/share/icons/git-v*.sh
+# rm -rf ../archiso/airootfs/usr/share/icons/README.md
+# echo "Everything updated"
 
+# getting code from version 3
 
-#echo "Removing old files/folders from folder"
-#rm -rf ../archiso/airootfs/usr/share/icons/*
-echo "Copying new files/folders to folder from github"
-cp -r ../../Sardi-Mono-Archlabs/* ../archiso/airootfs/usr/share/icons/
-echo "delete junk files"
-rm -rf ../archiso/airootfs/usr/share/icons/git-v*.sh
-rm -rf ../archiso/airootfs/usr/share/icons/README.md
-echo "Everything updated"
+# cleaning tmp
+[ -d /tmp/sardi ] && rm -rf /tmp/sardi
+
+wget -O /tmp/sardi.tar.gz "https://sourceforge.net/projects/sardi/files/latest/download?source=files"
+mkdir /tmp/sardi
+tar -zxf /tmp/sardi.tar.gz -C /tmp/sardi
+rm /tmp/sardi.tar.gz
+cp -rf /tmp/sardi/* ~/ARCHLABS/Archlabs-Iso/archiso/airootfs/usr/share/icons/
+
+# cleaning tmp
+[ -d /tmp/sardi ] && rm -rf /tmp/sardi

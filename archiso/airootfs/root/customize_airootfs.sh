@@ -28,6 +28,8 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 systemctl enable pacman-init.service choose-mirror.service NetworkManager.service lightdm.service org.cups.cupsd.service
+#fixing loading speed
+#systemctl enable vboxservice.service
 systemctl set-default graphical.target
 pacman -Syy
 gpg --receive-keys C1A60EACE707FDA5
