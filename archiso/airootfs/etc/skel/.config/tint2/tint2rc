@@ -195,7 +195,7 @@ launcher_item_app = /usr/share/applications/calamares.desktop
 # Clock
 time1_format = %H:%M
 time2_format = 
-time1_font = Noto Sans Bold 10
+time1_font = Noto Sans Bold 12
 time1_timezone = 
 time2_timezone = 
 clock_font_color = #ffffff 100
