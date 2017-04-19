@@ -13,6 +13,7 @@ xorg-server-utils
 xorg-twm 
 xorg-xinit
 xorg-xprop
+xorg-drivers
 xterm 
 
 #video
@@ -33,7 +34,6 @@ xf86-video-sisusb
 xf86-video-vesa
 xf86-video-vmware
 xf86-video-voodoo
-xf86-video-nouveau
 
 #base
 base
