@@ -55,7 +55,13 @@ sh 30-config-conky-folder-v1.sh
 echo "Updating the .local folder"
 
 echo "Removing old files/folders from folder"
-rm -rf ../archiso/airootfs/etc/skel/.local/share/
+mkdir ../archiso/airootfs/etc/skel/.local
+mkdir ../archiso/airootfs/etc/skel/.local/share
 
 echo "Copying new files/folders to folder from github"
-cp -r ../../Archlabs-Other-Config-Files/local/share/ ../archiso/airootfs/etc/skel/.local/
+cp -r ../../Archlabs-Other-Config-Files/local/share/* ../archiso/airootfs/etc/skel/.local/share
+
+
+echo "Copying new files/folders to folder from github"
+mkdir ../archiso/airootfs/etc/skel/.local/share/plank
+cp -r ../../Archlabs-Plank-Themes/themes ../archiso/airootfs/etc/skel/.local/share/plank
