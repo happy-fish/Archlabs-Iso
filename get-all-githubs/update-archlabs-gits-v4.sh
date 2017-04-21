@@ -95,7 +95,7 @@ echo $(basename `pwd`)" done"
 cd ..
 
 # if there is no folder then make one
-[ -d $HOME"/ARCHLABS/Archlabs-Archlabs-Openbox-Themes-Dbox" ] || git clone https://github.com/ARCHLabs/Archlabs-Openbox-Themes-Dbox
+[ -d $HOME"/ARCHLABS/Archlabs-Openbox-Themes-Dbox" ] || git clone https://github.com/ARCHLabs/Archlabs-Openbox-Themes-Dbox
 
 cd Archlabs-Openbox-Themes-Dbox
 git pull
