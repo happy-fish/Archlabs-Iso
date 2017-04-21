@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 set -e -u
 
 sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
@@ -10,9 +9,12 @@ ln -sf /usr/share/zoneinfo/UTC /etc/localtime
 
 usermod -s /usr/bin/zsh root
 cp -aT /etc/skel/ /root/
+chmod 700 /root
 useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /bin/zsh liveuser
-#chmod 700 /root
 chown -R liveuser:users /home/liveuser
+
+#Enable Calamares Autostart
+ln -fs /usr/share/applications/calamares.desktop /home/liveuser/.config/autostart/calamares.desktop
 
 #enable autologin
 groupadd -r autologin
