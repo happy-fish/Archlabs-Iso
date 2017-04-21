@@ -3,5 +3,5 @@ Type=Application
 Name=Install ArchLabs
 Comment=Installer for ArchLabs
 Categories=Utility;
-Exec=sudo calamares
+Exec=sudo -E calamares
 Icon=/usr/share/icons/al4.png

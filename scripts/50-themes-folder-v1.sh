@@ -37,3 +37,17 @@ echo "delete junk files"
 rm -rf ../archiso/airootfs/usr/share/themes/git-v*.sh
 rm -rf ../archiso/airootfs/usr/share/themes/README.md
 echo "Everything updated"
+
+
+
+echo "Files from Archlabs-Openbox-Themes-Dbox"
+
+
+#echo "Removing old files/folders from folder"
+#rm -rf ../archiso/airootfs/usr/share/themes/*
+echo "Copying new files/folders to folder from github"
+cp -r ../../Archlabs-Openbox-Themes-Dbox/* ../archiso/airootfs/usr/share/themes/
+echo "delete junk files"
+rm -rf ../archiso/airootfs/usr/share/themes/git-v*.sh
+rm -rf ../archiso/airootfs/usr/share/themes/README.md
+echo "Everything updated"

@@ -14,9 +14,12 @@ useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storag
 #chmod 700 /root
 chown -R liveuser:users /home/liveuser
 
-#login lightdm
+#enable autologin
 groupadd -r autologin
 gpasswd -a liveuser autologin
+#enabling interactive passwordless login
+groupadd -r nopasswdlogin
+gpasswd -a liveuser nopasswdlogin
 
 
 sed -i 's/#\(PermitRootLogin \).\+/\1yes/' /etc/ssh/sshd_config
@@ -30,8 +33,6 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 systemctl enable lightdm.service
 systemctl set-default graphical.target
 systemctl enable pacman-init.service choose-mirror.service NetworkManager.service org.cups.cupsd.service
-#fixing loading speed
-#systemctl enable vboxservice.service
 
 pacman -Syy
 gpg --receive-keys C1A60EACE707FDA5
