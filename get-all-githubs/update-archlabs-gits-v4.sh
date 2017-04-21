@@ -95,6 +95,14 @@ echo $(basename `pwd`)" done"
 cd ..
 
 # if there is no folder then make one
+[ -d $HOME"/ARCHLABS/Archlabs-Archlabs-Openbox-Themes-Dbox" ] || git clone https://github.com/ARCHLabs/Archlabs-Openbox-Themes-Dbox
+
+cd Archlabs-Openbox-Themes-Dbox
+git pull
+echo $(basename `pwd`)" done"
+cd ..
+
+# if there is no folder then make one
 [ -d $HOME"/ARCHLABS/Archlabs-Other-Config-Files" ] || git clone https://github.com/ARCHLabs/Archlabs-Other-Config-Files
 
 cd Archlabs-Other-Config-Files
@@ -106,6 +114,14 @@ cd ..
 [ -d $HOME"/ARCHLABS/Archlabs-Pipemenus" ] || git clone https://github.com/ARCHLabs/Archlabs-Pipemenus
 
 cd Archlabs-Pipemenus
+git pull
+echo $(basename `pwd`)" done"
+cd ..
+
+# if there is no folder then make one
+[ -d $HOME"/ARCHLABS/Archlabs-Plank-Themes" ] || git clone https://github.com/ARCHLabs/Archlabs-Plank-Themes
+
+cd Archlabs-Plank-Themes
 git pull
 echo $(basename `pwd`)" done"
 cd ..
