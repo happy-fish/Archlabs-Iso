@@ -34,5 +34,10 @@ systemctl enable lightdm.service
 systemctl set-default graphical.target
 systemctl enable pacman-init.service choose-mirror.service NetworkManager.service org.cups.cupsd.service
 
+export _EDITOR=nano
+echo "EDITOR=${_EDITOR}" >> /etc/environment
+echo "EDITOR=${_EDITOR}" >> /etc/skel/.bashrc
+echo "EDITOR=${_EDITOR}" >> /etc/profile
+
 pacman -Syy
 gpg --receive-keys C1A60EACE707FDA5
