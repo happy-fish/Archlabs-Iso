@@ -11,6 +11,12 @@
 #
 ##################################################################################################################
 
+echo "Do not just run this. Examine and judge. Run at own risk."
+echo
+echo "Do not run on virtualbox."
+echo "Intended to be used on ssd/harddisk."
+echo
+echo "Press enter to continue"; read dummy;
 
 package="linux-lts"
 
@@ -60,6 +66,7 @@ else
 	fi
 
 fi
+
 
 sudo grub-install --target=i386-pc --recheck /dev/sda
 
