@@ -7,37 +7,39 @@
 ##########################################
 
 #xorg packages
-xorg-xkill
 xorg-server 
 xorg-server-utils 
 xorg-twm 
 xorg-xinit
+xorg-xkill
 xorg-xprop
 xterm 
 
 #video
+xorg-drivers
+#xorg-drivers includes
+#xf86-input-evdev
+#xf86-input-keyboard
+#xf86-input-libinput
+#xf86-input-mouse
+#xf86-input-synaptics
+#xf86-input-vmmouse
+#xf86-input-void
+#xf86-video-amdgpu
+#xf86-video-ati
+#xf86-video-dummy
+#xf86-video-fbdev
+#xf86-video-intel
+#xf86-video-nouveau
+#xf86-video-openchrome
+#xf86-video-vesa
+#xf86-video-vmware
+#xf86-video-voodoo
+
+#xf86-video-sisusb
 mesa
-xf86-input-evdev
-xf86-input-keyboard
-xf86-input-libinput
-xf86-input-mouse
-xf86-input-synaptics
-xf86-input-vmmouse
-xf86-input-void
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-dummy
-xf86-video-fbdev
-xf86-video-intel
-xf86-video-nouveau
-xf86-video-openchrome
-xf86-video-sisusb
-xf86-video-vesa
-xf86-video-vmware
-xf86-video-voodoo
 
 #base
-base
 base-devel
 
 #vbox
@@ -77,7 +79,6 @@ linux-atm
 lsscsi
 mc
 mtools
-ncdu
 ndisc6
 nfs-utils
 nilfs-utils
@@ -100,7 +101,6 @@ sdparm
 sg3_utils
 smartmontools
 speedtouch
-speedtest-cli
 sudo
 tcpdump
 testdisk
@@ -113,18 +113,26 @@ xl2tpd
 zd1211-firmware
 
 #packages for installer
-wipe
 os-prober
-#xinit-xsession
 
 #audio
+alsa-firmware
+alsa-plugins
+alsa-lib
 alsa-utils
-pulseaudio 
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer
+pulseaudio
 pulseaudio-alsa
 pavucontrol
 volumeicon
 
+
 #xfce4
+xfce4-appfinder
 xfce4-notifyd
 xfce4-power-manager
 xfce4-screenshooter
@@ -133,12 +141,12 @@ xfce-slimlock
 xfce4-taskmanager
 
 #openbox
-openbox
 obconf
 obkey
 oblogout
 obmenu
 obmenu-generator
+openbox
 
 #lightdm
 lightdm 
@@ -170,15 +178,16 @@ lxrandr
 #applications
 audacious
 audacious-plugins
-audacity
 catfish
 chromium
 clipit-gtk3
 compton
 conky
+deadbeef
 dmenu
 feh
 firefox
+flashplugin
 galculator
 geany
 gigolo
@@ -234,7 +243,8 @@ libmtp
 laptop-detect
 lsb-release
 lxrandr
-mlocate 
+mlocate
+ncdu
 oomox
 p7zip
 pacaur
@@ -249,7 +259,9 @@ qt5-styleplugins
 reflector 
 rsync 
 rxvt-unicode
+speedtest-cli
 squashfs-tools
+terminator
 unrar
 viewnior
 webkitgtk
@@ -258,10 +270,6 @@ xfburn
 yad
 yaourt
 zenity
-
-#fix gtk themes
-#gtk3-nocsd-git
-#lib32-libgtk3-nocsd-git
 
 #printers
 cups
@@ -272,19 +280,27 @@ libcups
 hplip 
 system-config-printer
 
-
-#themes
+#themes and icons
 arc-gtk-theme
+arc-icon-theme
 bunsen-themes-git
 faenza-icon-theme
 gnome-icon-theme
 gtk-theme-arc-grey-git
+moka-icon-theme-git
+numix-icon-theme-git
+numix-circle-icon-theme-git
 openbox-arc-git
+papirus-icon-theme-git
+sardi-icons
+surfn-icons-git
 
 #cursors
 breeze-snow-cursor-theme
 
 #fonts
+adobe-source-sans-pro-fonts
+cantarell-fonts
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -292,9 +308,3 @@ terminus-font
 ttf-dejavu 
 ttf-droid-font
 ttf-monaco
-cantarell-fonts
-
-#infinality fonts
-docbook2x
-freetype2-infinality
-fontconfig-infinality
