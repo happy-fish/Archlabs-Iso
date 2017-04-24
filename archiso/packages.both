@@ -73,9 +73,7 @@ ipw2100-fw
 ipw2200-fw
 irssi
 lftp
-linux
 linux-atm
-linux-header
 lsscsi
 mc
 mtools
@@ -126,7 +124,7 @@ pulseaudio-alsa
 pavucontrol
 volumeicon
 
-#
+#xfce4
 xfce4-appfinder
 xfce4-notifyd
 xfce4-power-manager
