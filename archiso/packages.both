@@ -126,7 +126,7 @@ pulseaudio-alsa
 pavucontrol
 volumeicon
 
-#xfce4
+#
 xfce4-appfinder
 xfce4-notifyd
 xfce4-power-manager
@@ -173,12 +173,13 @@ lxrandr
 #applications
 audacious
 audacious-plugins
-audacity
+#audacity
 catfish
 chromium
 clipit-gtk3
 compton
 conky
+deadbeef
 dmenu
 feh
 firefox
