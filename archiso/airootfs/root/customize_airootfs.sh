@@ -32,7 +32,7 @@ gpasswd -a liveuser autologin
 groupadd -r nopasswdlogin
 gpasswd -a liveuser nopasswdlogin
 
-
+systemctl enable lightdm.service
 systemctl set-default graphical.target
 systemctl enable pacman-init.service choose-mirror.service NetworkManager.service org.cups.cupsd.service
 
