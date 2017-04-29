@@ -23,7 +23,8 @@ useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storag
 chown -R liveuser:users /home/liveuser
 
 #Enable Calamares Autostart
-ln -fs /usr/share/applications/calamares.desktop /home/liveuser/.config/autostart/calamares.desktop
+# desktop file in config/autostart
+#ln -fs /usr/share/applications/calamares.desktop /home/liveuser/.config/autostart/calamares.desktop
 
 #enable autologin
 groupadd -r autologin
