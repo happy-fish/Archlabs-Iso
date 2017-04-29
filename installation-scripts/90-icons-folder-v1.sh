@@ -40,13 +40,15 @@ echo "Everything updated"
 # getting code from version 3
 
 # cleaning tmp
-[ -d /tmp/sardi ] && rm -rf /tmp/sardi
+# [ -d /tmp/sardi ] && rm -rf /tmp/sardi
 
-wget -O /tmp/sardi.tar.gz "https://sourceforge.net/projects/sardi/files/latest/download?source=files"
-mkdir /tmp/sardi
-tar -zxf /tmp/sardi.tar.gz -C /tmp/sardi
-rm /tmp/sardi.tar.gz
-cp -rf /tmp/sardi/* ~/ARCHLABS/Archlabs-Iso/archiso/airootfs/usr/share/icons/
+# wget -O /tmp/sardi.tar.gz "https://sourceforge.net/projects/sardi/files/latest/download?source=files"
+# mkdir /tmp/sardi
+# tar -zxf /tmp/sardi.tar.gz -C /tmp/sardi
+# rm /tmp/sardi.tar.gz
+# cp -rf /tmp/sardi/* ~/ARCHLABS/Archlabs-Iso/archiso/airootfs/usr/share/icons/
 
-# cleaning tmp
-[ -d /tmp/sardi ] && rm -rf /tmp/sardi
+# # cleaning tmp
+# [ -d /tmp/sardi ] && rm -rf /tmp/sardi
+
+# coming from repo now
