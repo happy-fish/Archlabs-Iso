@@ -79,7 +79,6 @@ linux-atm
 lsscsi
 mc
 mtools
-ncdu
 ndisc6
 nfs-utils
 nilfs-utils
@@ -236,7 +235,8 @@ libmtp
 laptop-detect
 lsb-release
 lxrandr
-mlocate 
+mlocate
+ncdu
 oomox
 p7zip
 pacaur
