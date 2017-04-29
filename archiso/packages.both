@@ -116,11 +116,20 @@ zd1211-firmware
 os-prober
 
 #audio
+alsa-firmware
+alsa-plugins
+alsa-lib
 alsa-utils
-pulseaudio 
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer
+pulseaudio
 pulseaudio-alsa
 pavucontrol
 volumeicon
+
 
 #xfce4
 xfce4-appfinder
