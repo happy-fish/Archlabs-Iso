@@ -7,11 +7,11 @@
 ##########################################
 
 #xorg packages
-xorg-xkill
 xorg-server 
 xorg-server-utils 
 xorg-twm 
 xorg-xinit
+xorg-xkill
 xorg-xprop
 xterm 
 
@@ -39,9 +39,7 @@ xorg-drivers
 #xf86-video-sisusb
 mesa
 
-
 #base
-base
 base-devel
 
 #vbox
@@ -117,9 +115,7 @@ xl2tpd
 zd1211-firmware
 
 #packages for installer
-#wipe
 os-prober
-
 
 #audio
 alsa-utils
@@ -138,12 +134,12 @@ xfce-slimlock
 xfce4-taskmanager
 
 #openbox
-openbox
 obconf
 obkey
 oblogout
 obmenu
 obmenu-generator
+openbox
 
 #lightdm
 lightdm 
@@ -175,7 +171,6 @@ lxrandr
 #applications
 audacious
 audacious-plugins
-#audacity
 catfish
 chromium
 clipit-gtk3
@@ -266,10 +261,6 @@ yad
 yaourt
 zenity
 
-#fix gtk themes
-#gtk3-nocsd-git
-#lib32-libgtk3-nocsd-git
-
 #printers
 cups
 cups-pdf 
@@ -278,7 +269,6 @@ gsfonts
 libcups 
 hplip 
 system-config-printer
-
 
 #themes
 arc-gtk-theme
@@ -292,6 +282,8 @@ openbox-arc-git
 breeze-snow-cursor-theme
 
 #fonts
+adobe-source-code-pro-fonts
+cantarell-fonts
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -299,9 +291,3 @@ terminus-font
 ttf-dejavu 
 ttf-droid-font
 ttf-monaco
-cantarell-fonts
-
-#infinality fonts
-docbook2x
-freetype2-infinality
-fontconfig-infinality
