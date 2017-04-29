@@ -101,7 +101,6 @@ sdparm
 sg3_utils
 smartmontools
 speedtouch
-speedtest-cli
 sudo
 tcpdump
 testdisk
@@ -251,6 +250,7 @@ qt5-styleplugins
 reflector 
 rsync 
 rxvt-unicode
+speedtest-cli
 squashfs-tools
 terminator
 unrar
