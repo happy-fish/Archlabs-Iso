@@ -12,24 +12,22 @@
 #gnome-settings-daemon &
 #fi
 
-# If you want to use XFCE config tools...
-#
-#xfce-mcs-manager &
-
 compton -b --config ~/.config/compton.conf &
 
 tint2 &
 
+#(sleep 3; blueberry-tray) &
+
 # Set background image
 (sleep 1; nitrogen --restore) &
 
+#on laptops without seperate numeric keyboard put hashtag in front
 numlockx &
 
 ## GNOME PolicyKit authentication
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 ## Volume control for systray
-#(sleep 2; volti) &
 (sleep 2; volumeicon) &
 
 ## Volume keys daemon
@@ -56,3 +54,6 @@ xfsettingsd &
 (sleep 2s && al-conky-session --autostart) &
 
 #plank &
+#(sleep 2; temps) &
+#redshift-gtk &
+

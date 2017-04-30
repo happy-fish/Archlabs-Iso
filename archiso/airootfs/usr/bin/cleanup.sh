@@ -16,3 +16,4 @@ rm /etc/systemd/scripts/choose-mirror
 rm /root/{.automated_script.sh,.zlogin}
 rm /etc/mkinitcpio-archiso.conf
 rm -r /etc/initcpio
+rm /usr/bin/cleanup.sh

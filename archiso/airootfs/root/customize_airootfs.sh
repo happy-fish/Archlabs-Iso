@@ -35,7 +35,8 @@ gpasswd -a liveuser nopasswdlogin
 
 systemctl enable lightdm.service
 systemctl set-default graphical.target
-systemctl enable pacman-init.service choose-mirror.service NetworkManager.service org.cups.cupsd.service
+systemctl enable pacman-init.service choose-mirror.service NetworkManager.service org.cups.cupsd.service bluetooth.service
+systemctl enable ntpd.service
 
 export _EDITOR=nano
 echo "EDITOR=${_EDITOR}" >> /etc/environment
