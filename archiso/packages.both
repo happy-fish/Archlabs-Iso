@@ -154,6 +154,7 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 
 #network
+gvfs-smb
 networkmanager 
 network-manager-applet 
 networkmanager-dispatcher-ntpd
