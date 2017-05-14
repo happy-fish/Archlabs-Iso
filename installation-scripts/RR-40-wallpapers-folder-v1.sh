@@ -13,11 +13,11 @@ set -e
 ##################################################################################################################
 
 
-echo "Removing old files/folders from folder"
-rm -rf ../archiso/airootfs/usr/share/backgrounds/*
-echo "Copying new files/folders to folder from github"
-cp -r ../../Archlabs-Wallpaper/* ../archiso/airootfs/usr/share/backgrounds/
-echo "delete junk files"
-rm -rf ../archiso/airootfs/usr/share/backgrounds/git-v*.sh
-rm -rf ../archiso/airootfs/usr/share/backgrounds/README.md
-echo "Everything updated"
+#echo "Removing old files/folders from folder"
+#rm -rf ../archiso/airootfs/usr/share/backgrounds/*
+#echo "Copying new files/folders to folder from github"
+#cp -r ../../Archlabs-Wallpaper/* ../archiso/airootfs/usr/share/backgrounds/
+#echo "delete junk files"
+#rm -rf ../archiso/airootfs/usr/share/backgrounds/git-v*.sh
+#rm -rf ../archiso/airootfs/usr/share/backgrounds/README.md
+#echo "Everything updated"
