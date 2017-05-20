@@ -303,12 +303,19 @@ breeze-snow-cursor-theme
 adobe-source-sans-pro-fonts
 cantarell-fonts
 noto-fonts
-noto-fonts-cjk
+#noto-fonts-cjk
 noto-fonts-emoji
 terminus-font
 ttf-dejavu 
 ttf-droid-font
 ttf-monaco
+ttf-roboto
 
 #archlabs rolling release
 archlabs-wallpapers
+
+#conky
+jq
+
+
+
