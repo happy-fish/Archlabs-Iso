@@ -30,6 +30,13 @@ cp -r ../../Archlabs-Iso-Skel/config/* ../archiso/airootfs/etc/skel/.config/
 echo "Everything copied in ~/.config"
 
 
+echo "Updating the .local folder"
+mkdir ../archiso/airootfs/etc/skel/.local
+echo "Copying files/folders to folder from github"
+cp -r ../../Archlabs-Iso-Skel/local/* ../archiso/airootfs/etc/skel/.local/
+echo "Everything copied in ~/.local"
+
+
 echo "Updating openbox config files"
 mkdir ../archiso/airootfs/etc/skel/.config/openbox
 echo "Copying new files/folders to folders from github"
