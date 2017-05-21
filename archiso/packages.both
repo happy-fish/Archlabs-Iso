@@ -7,12 +7,9 @@
 ##########################################
 
 #xorg packages
-xorg-server 
-xorg-server-utils 
-xorg-twm 
+xorg-server  
+xorg-apps
 xorg-xinit
-xorg-xkill
-xorg-xprop
 xterm 
 
 #video
@@ -130,6 +127,13 @@ pulseaudio-alsa
 pavucontrol
 volumeicon
 
+#bluetooth
+blueberry
+bluez
+bluez-libs
+bluez-utils 
+bluez-firmware
+pulseaudio-bluetooth
 
 #xfce4
 xfce4-appfinder
