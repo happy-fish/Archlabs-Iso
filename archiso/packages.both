@@ -312,7 +312,10 @@ ttf-roboto
 
 #archlabs rolling release
 archlabs-arc-themes-git
+archlabs-common-git
+archlabs-docs-git
 archlabs-oblogout-themes-git
+archlabs-openbox-themes-git
 archlabs-pipemenus-git
 archlabs-plank-themes-git
 archlabs-slimlock-themes-git
