@@ -285,7 +285,6 @@ system-config-printer
 arc-gtk-theme
 arc-icon-theme
 bunsen-themes-git
-faenza-icon-theme
 gnome-icon-theme
 gtk-theme-arc-grey-git
 moka-icon-theme-git
@@ -312,7 +311,12 @@ ttf-monaco
 ttf-roboto
 
 #archlabs rolling release
-archlabs-wallpapers
+archlabs-arc-themes-git
+archlabs-oblogout-themes-git
+archlabs-pipemenus-git
+archlabs-plank-themes-git
+archlabs-tint2-themes-git
+archlabs-wallpapers-git
 
 #conky
 jq
