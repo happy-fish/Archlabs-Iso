@@ -29,7 +29,7 @@ my $editor = $CONFIG->{editor};
 
 
 our $SCHEMA = [
-
+	{sep => "ARCHLabs"},
     #          COMMAND                 LABEL                ICON
     #{item => ['xdg-open .',        'File Manager',      'file-manager']},
     #{item => ['xterm',             'Terminal',          'terminal']},
@@ -81,7 +81,7 @@ our $SCHEMA = [
             {item => ["$editor ~/.config/openbox/rc.xml",       'Edit rc.xml',                   'text-xml']},
             {item => ["$editor ~/.config/openbox/autostart",    'Edit autostart',                'text-xml']},
             {sep => undef},
-            {item => ['obmenu',                                 'GUI Menu Editor',                    'theme']},
+            {item => ['obmenu3',                                 'GUI Menu Editor',                    'theme']},
             {item => ['obconf',                                 'GUI Config Tool',               'theme']},
             {item => ['obkey',                                  'GUI Keybinds',                  'theme']},
 

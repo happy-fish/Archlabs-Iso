@@ -148,7 +148,7 @@ xfce4-taskmanager
 obconf
 obkey
 oblogout
-obmenu
+obmenu3
 obmenu-generator
 openbox
 
@@ -181,8 +181,6 @@ lxmenu-data
 lxrandr
 
 #applications
-audacious
-audacious-plugins
 catfish
 chromium
 clipit-gtk3
@@ -233,8 +231,10 @@ dmidecode
 evince
 file-roller 
 filezilla
+font-manager-git
 git 
 gksu
+glances
 gnome-keyring
 gparted
 gpicview
@@ -261,11 +261,13 @@ polkit-gnome
 python2-dbus
 qt5ct
 qt5-styleplugins
-reflector 
+reflector
+rofi
 rsync 
 rxvt-unicode
 speedtest-cli
 squashfs-tools
+temps
 terminator
 unrar
 viewnior
@@ -288,8 +290,6 @@ system-config-printer
 #themes and icons
 arc-gtk-theme
 arc-icon-theme
-bunsen-themes-git
-faenza-icon-theme
 gnome-icon-theme
 gtk-theme-arc-grey-git
 moka-icon-theme-git
