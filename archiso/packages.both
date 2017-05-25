@@ -283,9 +283,10 @@ zenity
 cups
 cups-pdf 
 ghostscript 
-gsfonts 
+gsfonts
+gutenprint
 libcups 
-hplip 
+hplip
 system-config-printer
 
 #themes and icons
