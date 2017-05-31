@@ -235,6 +235,7 @@ font-manager-git
 git 
 gksu
 glances
+glxinfo
 gnome-keyring
 gparted
 gpicview
