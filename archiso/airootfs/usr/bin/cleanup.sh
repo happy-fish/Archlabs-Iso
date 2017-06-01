@@ -16,4 +16,5 @@ rm /etc/systemd/scripts/choose-mirror
 rm /root/{.automated_script.sh,.zlogin}
 rm /etc/mkinitcpio-archiso.conf
 rm -r /etc/initcpio
+pacman -S archlabs-slimlock-themes-git
 rm /usr/bin/cleanup.sh
