@@ -228,6 +228,7 @@ cower
 dialog
 dmidecode
 evince
+ffmpegthumbnailer
 file-roller 
 filezilla
 font-manager-git
@@ -264,6 +265,7 @@ python2-dbus
 qt5ct
 qt5-styleplugins
 reflector
+raw-thumbnailer
 rofi
 rsync 
 rxvt-unicode
