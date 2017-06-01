@@ -32,10 +32,6 @@ xorg-drivers
 #xf86-video-vesa
 #xf86-video-vmware
 #xf86-video-voodoo
-nvidia
-nvidia-utils
-nvidia-lts
-
 #xf86-video-sisusb
 mesa
 
