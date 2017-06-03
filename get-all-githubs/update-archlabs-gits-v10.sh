@@ -65,6 +65,14 @@ echo $(basename `pwd`)" done"
 cd ..
 
 # if there is no folder then make one
+[ -d $HOME"/ARCHLABS/Archlabs-Hello" ] || git clone https://github.com/ARCHLabs/Archlabs-Hello
+
+cd Archlabs-Hello
+git pull
+echo $(basename `pwd`)" done"
+cd ..
+
+# if there is no folder then make one
 [ -d $HOME"/ARCHLABS/Archlabs-Icon-Themes" ] || git clone https://github.com/ARCHLabs/Archlabs-Icon-Themes
 
 cd Archlabs-Icon-Themes
