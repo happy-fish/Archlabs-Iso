@@ -14,10 +14,10 @@ set -e
 
 echo "Let us change all instances of version number everywhere."
 
-echo "What is the old version? e.g.   v4.0.0    (including v and dots)"
+echo "What is the old version? e.g.   v4.7.0    (including v and dots)"
 read oldversion
 
-echo "To what version do you want upgrade e.g.    v4.0.1   (including v and dots)"
+echo "To what version do you want upgrade e.g.    v4.7.1   (including v and dots)"
 
 read newversion
 
@@ -40,3 +40,4 @@ if [[ "$response" == [yY] ]]; then
 fi
 
 
+cp -r ../../Archlabs-Iso ../../Archlabs-Iso-$newversion

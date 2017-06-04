@@ -16,5 +16,5 @@ echo "moving iso to documents and insync"
 
 
 cp ~/archlabs-build/archiso/out/archlabs-* ~/Documents/
-cp ~/archlabs-build/archiso/out/archlabs-* ~/Insync/Shared/ArchLabs/ISO/
+cp ~/archlabs-build/archiso/out/archlabs-* ~/Insync/ArchLabs\ Shared/Iso/
  

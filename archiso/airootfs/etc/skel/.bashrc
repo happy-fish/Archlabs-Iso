@@ -5,6 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export HISTCONTROL=ignoreboth:erasedups
+
 PS1='[\u@\h \W]\$ '
 
 #list
@@ -25,7 +27,6 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 #readable output
-alias mount='mount |column -t'
 alias df='df -h'
 
 alias merge="xrdb -merge ~/.Xresources"
@@ -44,5 +45,11 @@ alias pksyu="packer -Syu  --noconfirm --noedit"
 
 alias fixpng="find . -type f -name "*.png" -exec convert {} -strip {} \;"
 
+
+shopt -s autocd # change to named directory
+shopt -s cdspell # autocorrects cd misspellings
+shopt -s cmdhist # save multi-line commands in history as single line
+shopt -s histappend # do not overwrite history
+shopt -s expand_aliases # expand aliases
 
 neofetch

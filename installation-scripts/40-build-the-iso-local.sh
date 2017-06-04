@@ -20,6 +20,7 @@ echo "Deleting the build folder if one exists - takes some time"
 # cleaning folder
 [ -d ~/archlabs-build ] && sudo rm -rf ~/archlabs-build
 
+echo "Copying files and folder to ~/archlabs-build"
 
 sudo cp -r ../../Archlabs-Iso ~/archlabs-build
 

@@ -44,7 +44,6 @@ virtualbox-guest-utils
 
 #archiso
 arch-install-scripts
-b43-fwcutter
 btrfs-progs
 clonezilla
 crda
@@ -100,6 +99,7 @@ speedtouch
 sudo
 tcpdump
 testdisk
+tmux
 usb_modeswitch
 vim-minimal
 vpnc
@@ -116,6 +116,7 @@ alsa-firmware
 alsa-plugins
 alsa-lib
 alsa-utils
+gst-libav
 gst-plugins-bad
 gst-plugins-base
 gst-plugins-good
@@ -157,9 +158,13 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 
 #network
+b43-fwcutter
+b43-firmware
+broadcom-wl
 gvfs-smb
-networkmanager 
-network-manager-applet 
+networkmanager
+network-manager-applet
+networkmanager-pptp
 networkmanager-dispatcher-ntpd
 wireless_tools
 wpa_actiond
@@ -194,14 +199,13 @@ galculator
 geany
 gimp
 gmrun
-gnumeric
 gsimplecal
 hardinfo
 imagemagick
 inkscape
 libreoffice-fresh
 meld
-neofetch
+neofetch-git
 nitrogen
 numlockx
 packer
@@ -216,10 +220,11 @@ tint2
 transmission-gtk
 variety
 vivaldi-snapshot
+vivaldi-snapshot-ffmpeg-codecs
 vlc
 w3m
 
-#utilities 
+#utilities
 arandr
 aurvote-git
 bash-completion
@@ -244,6 +249,7 @@ google-talkplugin
 gparted
 gpicview
 gpick
+grub-customizer
 hexchat
 hardinfo
 htop
@@ -264,16 +270,19 @@ pacaur
 pamac-aur
 plank
 playerctl
+polybar-git
 polkit
 polkit-gnome
 python2-dbus
 python2-xdg
 qt5ct
 qt5-styleplugins
+qt5-tools
+qt5-webkit
 reflector
 raw-thumbnailer
 redshift
-rofi
+rofi-git
 rsync 
 rxvt-unicode
 speedtest-cli
@@ -281,8 +290,11 @@ squashfs-tools
 temps
 terminator
 unrar
+unzip
 viewnior
 webkitgtk
+webkit2gtk
+wttr
 wget
 xfburn
 yad
@@ -319,7 +331,6 @@ breeze-snow-cursor-theme
 adobe-source-sans-pro-fonts
 cantarell-fonts
 noto-fonts
-#noto-fonts-cjk
 noto-fonts-emoji
 terminus-font
 ttf-dejavu 
@@ -336,13 +347,18 @@ archlabs-oblogout-themes-git
 archlabs-openbox-themes-git
 archlabs-pipemenus-git
 archlabs-plank-themes-git
-#archlabs-slimlock-themes-git
+archlabs-rofi-themes-git
+archlabs-slimlock-themes-git
 archlabs-tint2-themes-git
 archlabs-wallpapers-git
+archlabs-wallpapers-4k-git
 
 #conky
 jq
 lm_sensors
 
-
+#i3wm
+i3status
+i3blocks
+i3-gaps-next-git
 
