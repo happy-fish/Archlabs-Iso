@@ -9,11 +9,13 @@
 
 -- BunsenLabs ellipses by damo <damo@bunsenlabs.org> April 2015
 
--- converted to conky 1.10 syntax for ARCHLabs by: postmaster
+-- converted to conky 1.10 syntax for ArchLabs by: postmaster
 -- original config borrowed from BunsenLabs with love
 
 -- compton.conf has "shadow-exclude = [ "n:a:Conky" ];", so ellipses.conkyrc
 -- is draggable/resizable with Alt+ Lbutton/Rbutton
+
+-- pkill -xf "conky -q -c $HOME/.config/conky/AL-Ellipses-Time.conkyrc" &
 
 conky.config = {
 background = true,
@@ -27,15 +29,15 @@ own_window_transparent = true,
 own_window_colour = '#000000',
 own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
 own_window_class = 'Conky',
-own_window_title = 'ARCHLabs Ellipse Clock Conky',
+own_window_title = 'ArchLabs Ellipse Clock Conky',
 
 double_buffer = true,
 
-minimum_width = 208, 
-minimum_height = 274,
-maximum_width = 208,
+minimum_width = 100, 
+minimum_height = 90,
+maximum_width = 100,
 
-alignment = 'middle_middle',
+alignment = 'bottom_right',
 gap_x = 0,
 gap_y = 0,
 
@@ -48,17 +50,17 @@ use_xft = true,
 --xftfont Liberation Sans:size=12
 font = 'Sans-serif:size=12',
 xftalpha = 0,
-default_color = '#676767',
+default_color = '#2A4F77',
 uppercase = false,
 
-lua_load = '$HOME/.config/conky/lua/clock-dots-grey.lua',
+lua_load = '~/.config/conky/lua/clock.lua',
 lua_draw_hook_pre = 'draw_clock',
 
 };
 
 conky.text = [[
-${image $HOME/.config/conky/images/flatALlogo.png -s 150x150}
-${voffset 100}${alignr}${time %d}
-${alignr}${time %B}
-${alignr}${time %A}
+#${image $HOME/.config/conky/images/archlabs.png}
+#${goto 80}${voffset 220}${time %A}
+#${goto 80}${time %d}
+#${goto 80}${time %B}
 ]];

@@ -121,6 +121,11 @@ our $SCHEMA = [
         {sep => undef},
         {item => ["gksudo geany /etc/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm.conf",  'Login Settings','login']},
         {item => ["gksudo gparted", 'GParted',                  'gparted']},
+        {sep => undef},   
+        {item => ["gnome-disks", 			'Disks',                  				'gnome-disks']},
+        {item => ["hardinfo", 				'System Profiler and Benchmark',       	'hardinfo']},
+        {item => ["xfce4-taskmanager", 		'Taskmanager',                  		'gnome-system-monitor']},                        
+    
     {end_cat => undef},
 
     {sep => undef},

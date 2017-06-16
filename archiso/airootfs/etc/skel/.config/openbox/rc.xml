@@ -426,7 +426,7 @@
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>firefox</command>
+        <command>exo-open --launch webbrowser</command>
       </action>
     </keybind>
     <keybind key="W-l">
@@ -658,7 +658,7 @@
         <command>obmenu3</command>
       </action>
       <action name="MaximizeFull"/>
-    </keybind>     
+    </keybind>
     <keybind key="C-A-k">
       <action name="Execute">
         <command>obkey</command>
@@ -680,7 +680,7 @@
     </keybind>
     <keybind key="C-A-V">
       <action name="Execute">
-        <command>vivaldi-stable</command>
+        <command>vivaldi-snapshot</command>
       </action>
     </keybind>
     <keybind key="C-A-B">
@@ -716,6 +716,11 @@
     <keybind key="C-A-F">
       <action name="Execute">
         <command>firefox</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-G">
+      <action name="Execute">
+        <command>chromium</command>
       </action>
     </keybind>
   </keyboard>
