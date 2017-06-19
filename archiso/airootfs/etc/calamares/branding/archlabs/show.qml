@@ -42,9 +42,9 @@ Presentation
         Text {
             anchors.horizontalCenter: background1.horizontalCenter
             anchors.top: background1.bottom
-            text: "Welcome to ARCHLabs Linux <br/>"+
-                  "ARCHLabs is based on Arch Linux, with an easy installation.<br/>"+
-                  "ARCHLabs is our vision for bringing the BunsenLabs experience to Arch."
+            text: "Welcome to ArchLabs Linux <br/>"+
+                  "ArchLabs is based on Arch Linux, with an easy installation.<br/>"+
+                  "ArchLabs is our vision for bringing the BunsenLabs experience to Arch."
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
@@ -63,7 +63,7 @@ Presentation
         Text {
             anchors.horizontalCenter: background2.horizontalCenter
             anchors.top: background2.bottom
-            text: "ARCHLabs features the lightning fast openbox menu,<br/>"+
+            text: "ArchLabs features the lightning fast openbox menu,<br/>"+
                   "customized to provide amazing functionality."
             wrapMode: Text.WordWrap
             width: 600
@@ -84,7 +84,7 @@ Presentation
             anchors.horizontalCenter: background3.horizontalCenter
             anchors.top: background3.bottom
             text: "With incredible theming, and the power of Arch Linux,<br/>"+
-                  "ARCHLabs provides a lightning fast, extremely powerful,<br/>"+
+                  "ArchLabs provides a lightning fast, extremely powerful,<br/>"+
 									"and stunning desktop experience."
             wrapMode: Text.WordWrap
             width: 600

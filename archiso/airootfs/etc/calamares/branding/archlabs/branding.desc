@@ -2,13 +2,13 @@
 componentName:  archlabs
 
 strings:
-    productName:         ARCHLabs
-    shortProductName:    ARCHLabs
+    productName:         ArchLabs
+    shortProductName:    ArchLabs
     version:             1.0
     shortVersion:        1.0
-    versionedName:       ARCHLabs
-    shortVersionedName:  ARCHLabs
-    bootloaderEntryName: ARCHLabs
+    versionedName:       ArchLabs
+    shortVersionedName:  ArchLabs
+    bootloaderEntryName: ArchLabs
 
 images:
     productLogo:         "squid.png"
