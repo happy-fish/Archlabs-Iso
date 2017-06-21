@@ -349,7 +349,6 @@ jq
 lm_sensors
 
 #i3wm
-i3lock
 i3status
 i3blocks
 i3-gaps-next-git
