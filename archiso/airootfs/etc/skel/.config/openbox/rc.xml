@@ -423,6 +423,11 @@
         <command>rofi-theme-selector</command>
       </action>
     </keybind>
+    <keybind key="C-A-r">
+      <action name="Execute">
+        <command>rofi-theme-selector</command>
+      </action>
+    </keybind>    
     <keybind key="W-e">
       <action name="Execute">
         <command>geany</command>
@@ -443,6 +448,11 @@
         <command>pavucontrol</command>
       </action>
     </keybind>
+    <keybind key="C-A-u">
+      <action name="Execute">
+        <command>pavucontrol</command>
+      </action>
+    </keybind>    
     <keybind key="W-x">
       <action name="Execute">
         <command>oblogout</command>
@@ -468,6 +478,16 @@
         <command>rofi -modi drun,run -show drun -font "Noto Sans 13"</command>
       </action>
     </keybind>
+    <keybind key="W-F11">
+      <action name="Execute">
+        <command>rofi -modi drun,run -show drun -fullscreen -font "Noto Sans 13"</command>
+      </action>
+    </keybind>
+    <keybind key="W-F12">
+      <action name="Execute">
+        <command>rofi -modi drun,run -show drun -font "Noto Sans 13"</command>
+      </action>
+    </keybind>    
     <keybind key="W-space">
       <action name="ShowMenu">
         <menu>root-menu</menu>
@@ -584,7 +604,7 @@
     </keybind>
     <keybind key="W-F1">
       <action name="Execute">
-        <command>firefox</command>
+        <command>exo-open --launch webbrowser</command>
       </action>
     </keybind>
     <keybind key="W-F2">
