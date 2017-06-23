@@ -3,5 +3,5 @@ Type=Application
 Name=Install ArchLabs
 Comment=Installer for ArchLabs
 Categories=Utility;
-Exec=sudo calamares -style Arc-Dark
+Exec=env QT_QPA_PLATFORMTHEME=Arc-Dark sudo -E calamares
 Icon=al-calamares
