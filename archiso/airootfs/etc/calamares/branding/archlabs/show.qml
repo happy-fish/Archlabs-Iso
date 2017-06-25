@@ -34,18 +34,19 @@ Presentation
 
         Image {
             id: background1
-            source: "slide.png"
-            width: 500; height: 275
+            source: "slide1.png"
+            width: 640; height: 300
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
         Text {
             anchors.horizontalCenter: background1.horizontalCenter
             anchors.top: background1.bottom
-            text: "Welcome to ArchLabs Linux <br/>"+
+            text: "Welcome to ArchLabs.<br/>"+
                   "ArchLabs is based on Arch Linux, with an easy and grahical installer called Calamares.<br/>"+
                   "ArchLabs is our vision for bringing the BunsenLabs experience to Arch.<br/>"+
-				  "Our vision did not end there. ArchLabs is evolving and innovating all the time"
+				  "Our vision did not end there. ArchLabs is evolving and innovating all the time.<br/>"+
+				  "Reinventing ourselves with the help of the ArchLabbers."
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
@@ -57,15 +58,15 @@ Presentation
         Image {
             id: background2
             source: "slide2.png"
-            width: 500; height: 275
+            width: 640; height: 300
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
         Text {
             anchors.horizontalCenter: background2.horizontalCenter
             anchors.top: background2.bottom
-            text: "ArchLabs features the lightning fast openbox menu,<br/>"+
-                  "customized to provide amazing functionality.<br/>"+
+            text: "ArchLabs features the lightning fast openbox menu.<br/>"+
+                  "Customized to provide amazing functionality.<br/>"+
                   "ArchLabs is low on cpu and ram consumption."
             wrapMode: Text.WordWrap
             width: 600
@@ -78,14 +79,14 @@ Presentation
         Image {
             id: background3
             source: "slide3.png"
-            width: 500; height: 275
+            width: 640; height: 300
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
         Text {
             anchors.horizontalCenter: background3.horizontalCenter
             anchors.top: background3.bottom
-            text: "With incredible theming, tweaking and configuration<br/>"+
+            text: "With incredible theming andtweaking configurations<br/>"+
                   "ArchLabs aimes to provide an awesome desktop experience<br/>"+
 				  "out of the box."
             wrapMode: Text.WordWrap
@@ -99,13 +100,13 @@ Presentation
         Image {
             id: background4
             source: "slide4.png"
-            width: 500; height: 275
+            width: 640; height: 300
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
         Text {
             anchors.horizontalCenter: background2.horizontalCenter
-            anchors.top: background2.bottom
+            anchors.top: background4.bottom
             text: "ArchLabs features now also i3wm tiling manager with gaps.<br/>"+
                   "This is an awesome way to tile your applications<br/>"+
                   "over one or more monitors. Very fast, low on cpu and mem as well."
@@ -120,16 +121,17 @@ Presentation
         Image {
             id: background5
             source: "slide5.png"
-            width: 500; height: 275
+            width: 640; height: 300
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
         Text {
             anchors.horizontalCenter: background2.horizontalCenter
-            anchors.top: background2.bottom
+            anchors.top: background5.bottom
             text: "Concentrated fun out of the box.<br/>"+
                   "Less frustrations more fun.<br/>"+
-                  "Install. Change wallpaper, theme, icons, cursor, conky. Done."
+                  "Install. Change wallpaper, theme, icons, cursor, conky. Done.<br/>"+
+                  "ArchLabs - What did you expect"
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
