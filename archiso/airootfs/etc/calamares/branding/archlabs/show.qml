@@ -35,9 +35,9 @@ Presentation
         Image {
             id: background1
             source: "slide1.png"
-            width: 500; height: 275
+            width: 700; height: 475
             fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
+            anchors.top: parent
         }
         Text {
             anchors.horizontalCenter: background1.horizontalCenter
@@ -58,9 +58,9 @@ Presentation
         Image {
             id: background2
             source: "slide2.png"
-            width: 500; height: 275
+            width: 700; height: 475
             fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
+            anchors.top: parent
         }
         Text {
             anchors.horizontalCenter: background2.horizontalCenter
@@ -79,9 +79,9 @@ Presentation
         Image {
             id: background3
             source: "slide3.png"
-            width: 500; height: 275
+            width: 700; height: 475
             fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
+            anchors.top: parent
         }
         Text {
             anchors.horizontalCenter: background3.horizontalCenter
@@ -100,9 +100,9 @@ Presentation
         Image {
             id: background4
             source: "slide4.png"
-            width: 525; height: 300
+            width: 725; height: 475
             fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
+            anchors.top: parent
         }
         Text {
             anchors.horizontalCenter: background2.horizontalCenter
@@ -121,17 +121,16 @@ Presentation
         Image {
             id: background5
             source: "slide5.png"
-            width: 525; height: 300
+            width: 725; height: 475
             fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
+            anchors.top: parent
         }
         Text {
             anchors.horizontalCenter: background2.horizontalCenter
             anchors.top: background5.bottom
             text: "ArchLabs is concentrated fun out of the box.<br/>"+
                   "Install. Change wallpaper, theme, icons, cursor, conky. Done.<br/>"+
-                  "Have fun.<br/>"+
-                  "ArchLabs - What did you expect"
+                  "Have fun. ArchLabs - What did you expect"
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
