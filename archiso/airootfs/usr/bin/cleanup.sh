@@ -11,6 +11,7 @@ rm -rf /abif-master
 rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
 sed -i '/launcher_item_app = \/usr\/share\/applications\/calamares.desktop/d' /etc/skel/.config/tint2/tint2rc
 sed -i '/launcher_item_app = \/usr\/share\/applications\/archlabs-hello.desktop/d' /etc/skel/.config/tint2/tint2rc
+sed -i 's/user-session=i3/user-session=openbox/g' /etc/lightdm/lightdm.conf
 systemctl disable pacman-init.service choose-mirror.service
 rm -r /etc/systemd/system/{choose-mirror.service,pacman-init.service,etc-pacman.d-gnupg.mount,getty@tty1.service.d}
 rm /etc/systemd/scripts/choose-mirror

@@ -35,9 +35,9 @@ Presentation
         Image {
             id: background1
             source: "slide1.png"
-            width: 700; height: 475
+            width: 500; height: 275
             fillMode: Image.PreserveAspectFit
-            anchors.top: parent
+            anchors.centerIn: parent
         }
         Text {
             anchors.horizontalCenter: background1.horizontalCenter
@@ -58,9 +58,9 @@ Presentation
         Image {
             id: background2
             source: "slide2.png"
-            width: 700; height: 475
+            width: 500; height: 275
             fillMode: Image.PreserveAspectFit
-            anchors.top: parent
+            anchors.centerIn: parent
         }
         Text {
             anchors.horizontalCenter: background2.horizontalCenter
@@ -79,9 +79,9 @@ Presentation
         Image {
             id: background3
             source: "slide3.png"
-            width: 700; height: 475
+            width: 500; height: 275
             fillMode: Image.PreserveAspectFit
-            anchors.top: parent
+            anchors.centerIn: parent
         }
         Text {
             anchors.horizontalCenter: background3.horizontalCenter
@@ -100,12 +100,12 @@ Presentation
         Image {
             id: background4
             source: "slide4.png"
-            width: 725; height: 475
+            width: 500; height: 275
             fillMode: Image.PreserveAspectFit
-            anchors.top: parent
+            anchors.centerIn: parent
         }
         Text {
-            anchors.horizontalCenter: background2.horizontalCenter
+            anchors.horizontalCenter: background4.horizontalCenter
             anchors.top: background4.bottom
             text: "ArchLabs features now also i3wm tiling manager with gaps.<br/>"+
                   "This is an awesome way to tile your applications<br/>"+
@@ -121,12 +121,12 @@ Presentation
         Image {
             id: background5
             source: "slide5.png"
-            width: 725; height: 475
+            width: 500; height: 275
             fillMode: Image.PreserveAspectFit
-            anchors.top: parent
+            anchors.centerIn: parent
         }
         Text {
-            anchors.horizontalCenter: background2.horizontalCenter
+            anchors.horizontalCenter: background5.horizontalCenter
             anchors.top: background5.bottom
             text: "ArchLabs is concentrated fun out of the box.<br/>"+
                   "Install. Change wallpaper, theme, icons, cursor, conky. Done.<br/>"+
