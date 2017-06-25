@@ -4,8 +4,8 @@ componentName:  archlabs
 strings:
     productName:         ArchLabs
     shortProductName:    ArchLabs
-    version:             5.0
-    shortVersion:        5.0
+    version:             1.0
+    shortVersion:        1.0
     versionedName:       ArchLabs
     shortVersionedName:  ArchLabs
     bootloaderEntryName: ArchLabs
@@ -21,4 +21,3 @@ style:
    sidebarBackground:    "#353945"
    sidebarText:          "#ECEDEE"
    sidebarTextSelect:    "#353945"
-   sidebarTextHighlight: "#FFFFFF"
