@@ -35,9 +35,10 @@ Presentation
         Image {
             id: background1
             source: "slide1.png"
-            width: 500; height: 275
+            width: 800; height: 300
             fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
+			horizontalAlignment: Image.AlignHCenter
+			verticalAlignment: Image.AlignTop
         }
         Text {
             anchors.horizontalCenter: background1.horizontalCenter
@@ -58,9 +59,10 @@ Presentation
         Image {
             id: background2
             source: "slide2.png"
-            width: 500; height: 275
+            width: 800; height: 300
             fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
+			horizontalAlignment: Image.AlignHCenter
+			verticalAlignment: Image.AlignTop
         }
         Text {
             anchors.horizontalCenter: background2.horizontalCenter
@@ -79,9 +81,10 @@ Presentation
         Image {
             id: background3
             source: "slide3.png"
-            width: 500; height: 275
+            width: 800; height: 300
             fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
+			horizontalAlignment: Image.AlignHCenter
+			verticalAlignment: Image.AlignTop
         }
         Text {
             anchors.horizontalCenter: background3.horizontalCenter
@@ -100,9 +103,10 @@ Presentation
         Image {
             id: background4
             source: "slide4.png"
-            width: 500; height: 275
+            width: 800; height: 300
             fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
+			horizontalAlignment: Image.AlignHCenter
+			verticalAlignment: Image.AlignTop
         }
         Text {
             anchors.horizontalCenter: background4.horizontalCenter
@@ -121,16 +125,17 @@ Presentation
         Image {
             id: background5
             source: "slide5.png"
-            width: 500; height: 275
+            width: 800; height: 300
             fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
+			horizontalAlignment: Image.AlignHCenter
+			verticalAlignment: Image.AlignTop
         }
         Text {
             anchors.horizontalCenter: background5.horizontalCenter
             anchors.top: background5.bottom
             text: "ArchLabs is concentrated fun out of the box.<br/>"+
                   "Install. Change wallpaper, theme, icons, cursor, conky. Done.<br/>"+
-                  "Have fun. ArchLabs - What did you expect"
+                  "Have fun. Come and share your configs online to improve ArchLabs."
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
