@@ -84,7 +84,7 @@ conky.config = {
 	--Windows
 
 	own_window = true,
-	own_window_argb_value = 0,
+	own_window_argb_value = 20,
 	own_window_argb_visual = true,
 	own_window_class = 'Conky',
 	own_window_colour = '#000000',
@@ -116,11 +116,39 @@ conky.config = {
 
 
 conky.text = [[
-${voffset 24}${offset 150}${font Roboto Condensed:size=12}${color 616161}Belgium${font}
-${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color 616161}${time %A}${font}
-${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color 616161}${time %e}.${time %m}.${time %Y}${font}
-${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color 8D8D8D}${time %H:%M:%S} ${time %p}${font}
-${lua imlib_clock grey 130 71 70}
+${voffset 20}${offset 150}${font Roboto Condensed:size=12}${color1}Canada${font}
+#${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color1}${time %A}${font}
+#${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color1}${time %e}.${time %m}.${time %Y}${font}
+${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color1}${tztime Canada/Pacific %A}${font}
+${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color1}${tztime Canada/Pacific %e.%m.%Y}${font}
+${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color2}${tztime Canada/Pacific %H:%M:%S} ${time %p}${font}
+${lua imlib_clock grey 130 71 210 -10}
+
+${voffset 24}${offset 150}${font Roboto Condensed:size=12}${color1}Belgium${font}
+${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color1}${time %A}${font}
+#${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color1}${time %e}.${time %m}.${time %Y}${font}
+${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color1}${tztime Europe/Brussels %e.%m.%Y}${font}
+${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color2}${tztime Europe/Brussels %H:%M:%S} ${time %p}${font}
+${lua imlib_clock grey 130 71 70 2 0}
+
+
+${voffset 24}${offset 150}${font Roboto Condensed:size=12}${color1}India${font}
+${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color1}${time %A}${font}
+#${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color1}${time %e}.${time %m}.${time %Y}${font}
+${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color1}${tztime Asia/Calcutta %e.%m.%Y}${font}
+${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color2}${tztime Asia/Calcutta %H:%M:%S} ${time %p}${font}
+${lua imlib_clock grey 130 71 350 3 4}
+
+
+${voffset 24}${offset 150}${font Roboto Condensed:size=12}${color1}Australia${font}
+${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color1}${time %A}${font}
+#${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color1}${time %e}.${time %m}.${time %Y}${font}
+${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color1}${tztime NZ %e.%m.%Y}${font}
+${voffset 2}${offset 150}${font Roboto Condensed:size=12}${color2}${tztime NZ %H:%M:%S} ${time %p}${font}
+${lua imlib_clock grey 130 71 490 4 12}
+
+
+
 
 ]]
 
