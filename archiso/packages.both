@@ -221,7 +221,8 @@ vivaldi-snapshot-ffmpeg-codecs
 vlc
 w3m
 
-#utilities 
+#utilities
+acpid 
 arandr
 aurvote-git
 bash-completion
