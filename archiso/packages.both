@@ -44,7 +44,6 @@ virtualbox-guest-utils
 
 #archiso
 arch-install-scripts
-b43-fwcutter
 btrfs-progs
 clonezilla
 crda
@@ -159,8 +158,12 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 
 #network
+b43-fwcutter
+b43-firmware
+broadcom-wl
 gvfs-smb
-networkmanager 
+networkmanager
+networkmanager-pptp
 network-manager-applet 
 networkmanager-dispatcher-ntpd
 wireless_tools
@@ -288,6 +291,7 @@ squashfs-tools
 temps
 terminator
 unrar
+unzip
 viewnior
 webkitgtk
 webkit2gtk
