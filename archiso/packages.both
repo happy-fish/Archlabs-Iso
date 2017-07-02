@@ -159,8 +159,6 @@ lightdm-gtk-greeter-settings
 
 #network
 b43-fwcutter
-b43-firmware
-broadcom-wl
 gvfs-smb
 networkmanager
 network-manager-applet 
@@ -289,7 +287,6 @@ squashfs-tools
 temps
 terminator
 unrar
-unzip
 viewnior
 webkitgtk
 webkit2gtk
