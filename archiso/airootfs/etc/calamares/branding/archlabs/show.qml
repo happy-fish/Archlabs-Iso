@@ -44,10 +44,10 @@ Presentation
             anchors.horizontalCenter: background1.horizontalCenter
             anchors.top: background1.bottom
             text: "Welcome to ArchLabs <br/>"+
-                  "ArchLabs is based on Arch Linux, with an easy and grahical installer called Calamares.<br/>"+
-                  "ArchLabs is our vision for bringing the BunsenLabs experience to Arch.<br/>"+
-		  "Our vision did not end there. ArchLabs is evolving and innovating all the time.<br/>"+
-		  "Reinventing ourselves with the help of the ArchLabbers."
+                  "ArchLabs is based on Arch Linux, with an easy and graphical installer called Calamares.<br/>"+
+                  "ArchLabs is our vision to bring the BunsenLabs experience to Arch.<br/>"+
+				  "Our vision did not end there. ArchLabs is evolving and innovating all the time.<br/>"+
+		          "Reinventing ourselves with the help of the ArchLabbers."
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
@@ -92,7 +92,7 @@ Presentation
             anchors.top: background3.bottom
             text: "With incredible theming and tweaking configurations<br/>"+
                   "ArchLabs aims to provide an awesome desktop experience out of the box.<br/>"+
-	          "Less frustrations. More fun."
+				  "Less frustrations. More fun."
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
@@ -112,7 +112,7 @@ Presentation
         Text {
             anchors.horizontalCenter: background4.horizontalCenter
             anchors.top: background4.bottom
-            text: "ArchLabs now features also i3wm tiling manager with gaps.<br/>"+
+            text: "ArchLabs now also features i3 gaos, a tiling window manager.<br/>"+
                   "This is an awesome way to tile your applications<br/>"+
                   "over one or more monitors. Very fast, low on cpu and memory as well."
             wrapMode: Text.WordWrap
