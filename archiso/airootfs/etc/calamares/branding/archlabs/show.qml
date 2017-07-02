@@ -112,7 +112,7 @@ Presentation
         Text {
             anchors.horizontalCenter: background4.horizontalCenter
             anchors.top: background4.bottom
-            text: "ArchLabs now also features i3 gaos, a tiling window manager.<br/>"+
+            text: "ArchLabs now also features i3 gaps, a tiling window manager.<br/>"+
                   "This is an awesome way to tile your applications<br/>"+
                   "over one or more monitors. Very fast, low on cpu and memory as well."
             wrapMode: Text.WordWrap
