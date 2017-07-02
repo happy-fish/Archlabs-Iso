@@ -163,7 +163,6 @@ b43-firmware
 broadcom-wl
 gvfs-smb
 networkmanager
-networkmanager-pptp
 network-manager-applet 
 networkmanager-dispatcher-ntpd
 wireless_tools
@@ -225,7 +224,6 @@ vlc
 w3m
 
 #utilities
-acpid 
 arandr
 aurvote-git
 bash-completion
