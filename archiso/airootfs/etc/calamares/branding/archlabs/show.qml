@@ -68,6 +68,7 @@ Presentation
             anchors.horizontalCenter: background2.horizontalCenter
             anchors.top: background2.bottom
             text: "ArchLabs features the lightning fast openbox menu.<br/>"+
+				  "Right-mouse click to get to the openbox menu.<br/>"+
                   "Customized to provide amazing functionality.<br/>"+
                   "ArchLabs aims to be low on cpu and ram consumption."
             wrapMode: Text.WordWrap
