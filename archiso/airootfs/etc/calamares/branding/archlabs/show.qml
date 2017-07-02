@@ -45,7 +45,7 @@ Presentation
             anchors.top: background1.bottom
             text: "Welcome to ArchLabs <br/>"+
                   "ArchLabs is based on Arch Linux, with an easy and graphical installer called Calamares.<br/>"+
-                  "ArchLabs is our vision to bring the BunsenLabs experience to Arch.<br/>"+
+                  "ArchLabs brings the BunsenLabs experience to Arch.<br/>"+
 				  "Our vision did not end there. ArchLabs is evolving and innovating all the time.<br/>"+
 		          "Reinventing ourselves with the help of the ArchLabbers."
             wrapMode: Text.WordWrap
