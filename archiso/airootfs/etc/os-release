@@ -1,7 +1,7 @@
 NAME="ArchLabs"
 ID=archlabs
 ID_LIKE="arch"
-VERSION_ID=v4.5.4
+VERSION_ID=v4.6.0
 PRETTY_NAME="R2-D2"
 ANSI_COLOR="0;36"
 HOME_URL="https://archlabsblog.wordpress.com"

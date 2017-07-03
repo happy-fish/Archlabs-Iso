@@ -159,9 +159,12 @@ lightdm-gtk-greeter-settings
 
 #network
 b43-fwcutter
+b43-firmware
+broadcom-wl
 gvfs-smb
 networkmanager
-network-manager-applet 
+network-manager-applet
+networkmanager-pptp
 networkmanager-dispatcher-ntpd
 wireless_tools
 wpa_actiond
@@ -287,6 +290,7 @@ squashfs-tools
 temps
 terminator
 unrar
+unzip
 viewnior
 webkitgtk
 webkit2gtk

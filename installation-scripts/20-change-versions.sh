@@ -40,3 +40,4 @@ if [[ "$response" == [yY] ]]; then
 fi
 
 
+cp -r ../../Archlabs-Iso ../../Archlabs-Iso-$newversion
