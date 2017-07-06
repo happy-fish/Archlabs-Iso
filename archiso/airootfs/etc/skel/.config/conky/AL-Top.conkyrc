@@ -1,9 +1,9 @@
 --[[
 #=====================================================================================
 #                               ArchLabs
-# Date    : 02/07/2017
+# Date    : 06/07/2017
 # Author  : Erik Dubois at http://www.erikdubois.be
-# Version : v2.0.2
+# Version : v2.1.1
 # License : Distributed under the terms of GNU GPL version 2 or later
 # Documentation : http://erikdubois.be
 #======================================================================================
@@ -62,7 +62,7 @@ conky.config = {
 	--gap_x = -1910,
 	gap_x = 0,									-- pixels between right or left border
 	gap_y = 30,									-- pixels between bottom or left border
-	minimum_height = 200,						-- minimum height of window
+	minimum_height = 10,						-- minimum height of window
 	minimum_width = 900,						-- minimum height of window
 	maximum_width = 900,						-- maximum height of window
 
@@ -116,7 +116,7 @@ conky.config = {
 
 	--Colours
 
-	default_color = '#C0C0C0',  				-- default color and border color
+	default_color = '#FFFFFF',  				-- default color and border color
 	color1 = '#FFFFFF', 
 	color2 = '#AAAAAA', 
 	color3 = '#cccccc', 
