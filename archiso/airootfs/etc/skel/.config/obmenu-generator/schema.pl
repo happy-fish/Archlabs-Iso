@@ -99,7 +99,7 @@ our $SCHEMA = [
         {item => ["gksudo geany /etc/slim.conf",            'Slim Appearance',          'theme']},
         {item => ['rofi-theme-selector',                    'Rofi Appearance',          'theme']},                 
         {item => ['geany ~/.config/termite/config',         'Termite Appearance',       'theme']},
-        {item => ['gksudo geany /etc/slim.conf',            'Exit Appearance',          'theme']},   
+        {item => ["gksudo geany /etc/oblogout.conf",            'Exit Appearance',          'theme']},   
         {item => ['nitrogen',                               'Choose wallpaper',         'nitrogen']},
         {sep => undef},        
         {item => ['xfce4-notifyd-config',                   'Notifications',            'notifications']},
@@ -147,6 +147,7 @@ our $SCHEMA = [
     {end_cat => undef},
 
     {sep => undef},
+    {item => ["archlabs-hello", 			    'ArchLabs Hello',       	         'archlabs-hello']},
     {pipe => ['al-help-pipemenu',              'Help &amp; Resources',              'info']},
     {pipe => ['al-kb-pipemenu',                'Display Keybinds',                  'cs-keyboard']},
     ## The xscreensaver lock command

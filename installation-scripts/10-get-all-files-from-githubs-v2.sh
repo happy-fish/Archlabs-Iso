@@ -47,6 +47,16 @@ rm -rf ../archiso/airootfs/etc/skel/.config/openbox/README.md
 echo "Everything copied in ~/.config/openbox"
 
 
+echo "Updating i3 config files"
+mkdir ../archiso/airootfs/etc/skel/.config/i3
+echo "Copying new files/folders to folders from github"
+cp -r ../../Archlabs-i3wm/* ../archiso/airootfs/etc/skel/.config/i3/
+echo "delete junk files"
+rm -rf ../archiso/airootfs/etc/skel/.config/i3/git-v*.sh
+rm -rf ../archiso/airootfs/etc/skel/.config/i3/README.md
+echo "Everything copied in ~/.config/i3"
+
+
 echo "Updating the conky files"
 mkdir ../archiso/airootfs/etc/skel/.config/conky
 cp -r ../../Archlabs-Conky-Collection/* ../archiso/airootfs/etc/skel/.config/conky/

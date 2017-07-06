@@ -7,10 +7,10 @@
 ##########################################
 
 #xorg packages
-xorg-server  
+xorg-server
 xorg-apps
 xorg-xinit
-xterm 
+xterm
 
 #video
 xorg-drivers
@@ -131,7 +131,7 @@ volumeicon
 blueberry
 bluez
 bluez-libs
-bluez-utils 
+bluez-utils
 bluez-firmware
 pulseaudio-bluetooth
 
@@ -153,8 +153,8 @@ obmenu-generator
 openbox
 
 #lightdm
-lightdm 
-lightdm-gtk-greeter 
+lightdm
+lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 
 #network
@@ -165,6 +165,7 @@ gvfs-smb
 networkmanager
 network-manager-applet
 networkmanager-pptp
+networkmanager-vpnc
 networkmanager-dispatcher-ntpd
 wireless_tools
 wpa_actiond
@@ -200,6 +201,7 @@ geany
 gimp
 gmrun
 gsimplecal
+guvcview
 hardinfo
 imagemagick
 inkscape
@@ -236,10 +238,10 @@ dmidecode
 downgrade
 evince
 ffmpegthumbnailer
-file-roller 
+file-roller
 filezilla
 font-manager-git
-git 
+git
 gksu
 glances
 glxinfo
@@ -253,11 +255,13 @@ grub-customizer
 hexchat
 hardinfo
 htop
+hunspell
+hunspell-en
 intel-ucode
 intltool
 inxi
-iw 
-libmtp  
+iw
+libmtp
 laptop-detect
 lsb-release
 lxrandr
@@ -283,7 +287,7 @@ reflector
 raw-thumbnailer
 redshift
 rofi-git
-rsync 
+rsync
 rxvt-unicode
 speedtest-cli
 squashfs-tools
@@ -303,11 +307,11 @@ zenity
 
 #printers
 cups
-cups-pdf 
-ghostscript 
+cups-pdf
+ghostscript
 gsfonts
 gutenprint
-libcups 
+libcups
 hplip
 system-config-printer
 
@@ -333,7 +337,7 @@ cantarell-fonts
 noto-fonts
 noto-fonts-emoji
 terminus-font
-ttf-dejavu 
+ttf-dejavu
 ttf-droid-font
 ttf-monaco
 ttf-roboto
@@ -361,4 +365,3 @@ lm_sensors
 i3status
 i3blocks
 i3-gaps-next-git
-
