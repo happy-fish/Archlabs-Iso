@@ -111,6 +111,11 @@ zd1211-firmware
 #packages for installer
 os-prober
 
+# LUKS encryption
+cryptsetup
+kpmcore
+mkinitcpio-openswap
+
 #audio
 alsa-firmware
 alsa-plugins
