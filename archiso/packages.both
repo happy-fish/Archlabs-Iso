@@ -111,7 +111,7 @@ zd1211-firmware
 #packages for installer
 os-prober
 
-# LUKS encryption
+#LUKS encryption
 cryptsetup
 kpmcore
 mkinitcpio-openswap
@@ -207,7 +207,6 @@ gimp
 gmrun
 gsimplecal
 guvcview
-hardinfo
 imagemagick
 inkscape
 libreoffice-fresh
@@ -236,7 +235,6 @@ arandr
 aurvote-git
 bash-completion
 calamares
-catfish
 cower
 dialog
 dmidecode
@@ -269,7 +267,6 @@ iw
 libmtp
 laptop-detect
 lsb-release
-lxrandr
 mlocate
 mintstick-git
 ncdu
