@@ -277,7 +277,13 @@
       </action>
     </keybind>
     <keybind key="A-Tab">
-      <action name="NextWindow"/>
+      <action name="NextWindow">
+        <raise>yes</raise>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="UnshadeRaise"/>
+        </finalactions>
+      </action>
     </keybind>
     <keybind key="A-S-Tab">
       <action name="PreviousWindow"/>
@@ -348,12 +354,12 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>scrot 'ArchLabs_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f ~/Pictures/ ; gpicview ~/Pictures/$f'</command>
+        <command>scrot 'ArchLabs_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f'</command>
       </action>
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>scrot -d 5 'ArchLabs_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f ~/Pictures/ ; gpicview ~/Pictures/$f'</command>
+        <command>scrot -d 5 'ArchLabs_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f'</command>
       </action>
     </keybind>
     <keybind key="C-Print">
@@ -373,6 +379,11 @@
     <keybind key="A-F3">
       <action name="Execute">
         <command>xfce4-appfinder</command>
+      </action>
+    </keybind>
+    <keybind key="W-s">
+      <action name="Execute">
+        <command>skippy-xd --toggle-window-picker</command>
       </action>
     </keybind>
     <keybind key="W-S-d">
@@ -455,7 +466,7 @@
     </keybind>
     <keybind key="W-x">
       <action name="Execute">
-        <command>oblogout</command>
+        <command>openbox-exit</command>
       </action>
     </keybind>
     <keybind key="W-Escape">
@@ -586,7 +597,7 @@
     </keybind>
     <keybind key="W-Pause">
       <action name="Execute">
-        <command>oblogout</command>
+        <command>openbox-exit</command>
       </action>
     </keybind>
     <keybind key="S-W-q">
@@ -594,17 +605,17 @@
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>termite</command>
+        <command>exo-open --launch TerminalEmulator</command>
       </action>
     </keybind>
     <keybind key="S-W-Return">
       <action name="Execute">
-        <command>thunar</command>
+        <command>exo-open --launch FileManager</command>
       </action>
     </keybind>
     <keybind key="W-F1">
       <action name="Execute">
-        <command>exo-open --launch webbrowser</command>
+        <command>exo-open --launch WebBrowser</command>
       </action>
     </keybind>
     <keybind key="W-F2">
@@ -639,7 +650,7 @@
     </keybind>
     <keybind key="W-F8">
       <action name="Execute">
-        <command>thunar</command>
+        <command>exo-open --launch FileManager</command>
       </action>
     </keybind>
     <keybind key="W-F9">
@@ -669,7 +680,7 @@
     </keybind>
     <keybind key="C-A-j">
       <action name="Execute">
-        <command>obmenu3</command>
+        <command>kickshaw</command>
       </action>
       <action name="MaximizeFull"/>
     </keybind>
@@ -686,7 +697,7 @@
     </keybind>
     <keybind key="C-A-T">
       <action name="Execute">
-        <command>termite</command>
+        <command>exo-open --launch TerminalEmulator</command>
       </action>
     </keybind>
     <keybind key="C-A-d">
@@ -699,7 +710,7 @@
     </keybind>
     <keybind key="C-A-B">
       <action name="Execute">
-        <command>thunar</command>
+        <command>exo-open --launch FileManager</command>
       </action>
     </keybind>
     <keybind key="C-A-W">
@@ -814,7 +825,7 @@
         <action name="Move"/>
       </mousebind>
       <mousebind action="DoubleClick" button="Left">
-        <action name="ToggleMaximizeFull"/>
+        <action name="Move"/>
       </mousebind>
       <mousebind action="Press" button="Middle">
         <action name="Lower"/>

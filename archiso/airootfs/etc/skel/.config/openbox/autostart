@@ -38,12 +38,11 @@ xfce4-power-manager &
 
 ## XFCE4 Settings
 xfsettingsd &
-
 (sleep 5; nm-applet) &
-
 (sleep 2s && al-conky-session --autostart) &
+
+(sleep 2; skippy-xd --start-daemon) &
 
 #plank &
 #(sleep 2; temps) &
 #redshift-gtk &
-

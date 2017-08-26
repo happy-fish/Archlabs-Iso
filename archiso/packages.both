@@ -69,6 +69,7 @@ hdparm
 ipw2100-fw
 ipw2200-fw
 irssi
+jsoncpp
 lftp
 linux-atm
 lsscsi
@@ -153,7 +154,6 @@ xfce4-taskmanager
 obconf
 obkey
 oblogout
-obmenu3
 obmenu-generator
 openbox
 
@@ -189,6 +189,16 @@ xdg-user-dirs
 lxappearance-obconf
 lxmenu-data
 lxrandr
+
+#skippy
+xdo
+xdotool
+python2-xlib
+giflib
+libxcomposite
+libxdamage
+libxft
+libxinerama
 
 #applications
 catfish

@@ -9,6 +9,7 @@ rm -rf /etc/calamares
 rm -rf /usr/lib/calamares
 rm -rf /abif-master
 rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
+rm /usr/bin/al-obthemes
 sed -i '/launcher_item_app = \/usr\/share\/applications\/calamares.desktop/d' /etc/skel/.config/tint2/tint2rc
 sed -i '/launcher_item_app = \/usr\/share\/applications\/archlabs-hello.desktop/d' /etc/skel/.config/tint2/tint2rc
 #sed -i 's/user-session=i3/user-session=openbox/g' /etc/lightdm/lightdm.conf
