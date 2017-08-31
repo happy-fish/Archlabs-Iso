@@ -191,8 +191,6 @@ lxmenu-data
 lxrandr
 
 #skippy
-xdo
-xdotool
 python2-xlib
 giflib
 libxcomposite
