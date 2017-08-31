@@ -43,5 +43,8 @@ echo "EDITOR=${_EDITOR}" >> /etc/environment
 echo "EDITOR=${_EDITOR}" >> /etc/skel/.bashrc
 echo "EDITOR=${_EDITOR}" >> /etc/profile
 
+# Remove liveuser locale set to avoid mixed locales
+sed -i 's/en_US.UTF-8 UTF-8/#en_US.UTF-8 UTF-8/g' /etc/locale.gen
+
 pacman -Syy
 gpg --receive-keys C1A60EACE707FDA5
