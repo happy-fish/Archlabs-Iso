@@ -100,15 +100,11 @@ URxvt*boldItalicFont:     		xft:Monospace:regular:size=13
 URxvt.perl-ext-common:  default,clipboard,url-select,keyboard-select
 !URxvt.perl-ext-common:  default,clipboard,url-select,keyboard-select,tabbed
 
-! macros for clipboard and selection
+! macros for clipboard and selection "m"=Alt
 URxvt.copyCommand:      xclip -i -selection clipboard
 URxvt.pasteCommand:     xclip -o -selection clipboard
-URxvt.keysym.M-c:       perl:clipboard:copy
+URxvt.keysym.m-c:       perl:clipboard:copy
 URxvt.keysym.m-v:       perl:clipboard:paste
-URxvt.keysym.M-C-v:     perl:clipboard:paste_escaped
-URxvt.keysym.M-Escape:  perl:keyboard-select:activate
-URxvt.keysym.M-s:       perl:keyboard-select:search
-URxvt.keysym.M-u:       perl:url-select:select_next
 URxvt.urlLauncher:      firefox
 URxvt.underlineURLs:    true
 URxvt.urlButton:        1
@@ -172,6 +168,3 @@ UXTerm*color15: rgb:fc/fc/fc
 UXTerm*boldMode: false
 UXTerm*colorBDMode: true
 UXTerm*colorBD: rgb:3f/3f/3f
-
-                                                         
-                                                           

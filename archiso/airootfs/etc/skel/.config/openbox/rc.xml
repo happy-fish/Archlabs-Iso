@@ -124,6 +124,12 @@
       <name>2</name>
       <name>3</name>
       <name>4</name>
+      <name>5</name>
+      <name>6</name>
+      <name>7</name>
+      <name>8</name>
+      <name>9</name>
+      <name>10</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -131,7 +137,7 @@
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
-    <popupShow>Nonpixel</popupShow>
+    <popupShow>Never</popupShow>
     <!-- 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
     <popupPosition>Center</popupPosition>
     <!-- 'Center' or 'Top' -->
@@ -411,32 +417,22 @@
     </keybind>
     <keybind key="W-f">
       <action name="Execute">
-        <command>thunar</command>
+        <command>exo-open --launch FileManager</command>
       </action>
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>termite</command>
+        <command>exo-open --launch TerminalEmulator</command>
       </action>
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>exo-open --launch webbrowser</command>
+        <command>exo-open --launch WebBrowser</command>
       </action>
     </keybind>
     <keybind key="W-k">
       <action name="Execute">
         <command>slimlock</command>
-      </action>
-    </keybind>
-    <keybind key="W-r">
-      <action name="Execute">
-        <command>rofi-theme-selector</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-r">
-      <action name="Execute">
-        <command>rofi-theme-selector</command>
       </action>
     </keybind>
     <keybind key="W-e">
@@ -446,20 +442,10 @@
     </keybind>
     <keybind key="W-m">
       <action name="Execute">
-        <command>deadbeef</command>
-      </action>
-    </keybind>
-    <keybind key="W-h">
-      <action name="Execute">
-        <command>urxvt -T 'htop task manager' -e htop</command>
+        <command>audacious</command>
       </action>
     </keybind>
     <keybind key="W-v">
-      <action name="Execute">
-        <command>pavucontrol</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-u">
       <action name="Execute">
         <command>pavucontrol</command>
       </action>
@@ -481,20 +467,10 @@
     </keybind>
     <keybind key="C-space">
       <action name="Execute">
-        <command>rofi -modi drun,run -show drun -fullscreen -font "Noto Sans 13"</command>
-      </action>
-    </keybind>
-    <keybind key="C-Shift-space">
-      <action name="Execute">
         <command>rofi -modi drun,run -show drun -font "Noto Sans 13"</command>
       </action>
     </keybind>
     <keybind key="W-F11">
-      <action name="Execute">
-        <command>rofi -modi drun,run -show drun -fullscreen -font "Noto Sans 13"</command>
-      </action>
-    </keybind>
-    <keybind key="W-F12">
       <action name="Execute">
         <command>rofi -modi drun,run -show drun -font "Noto Sans 13"</command>
       </action>
@@ -555,113 +531,13 @@
     <keybind key="A-m">
       <action name="Move"/>
     </keybind>
-    <keybind key="A-t">
-      <action name="Execute">
-        <command>variety -t</command>
-      </action>
-    </keybind>
-    <keybind key="A-f">
-      <action name="Execute">
-        <command>variety -f</command>
-      </action>
-    </keybind>
-    <keybind key="A-p">
-      <action name="Execute">
-        <command>variety -p</command>
-      </action>
-    </keybind>
-    <keybind key="A-Left">
-      <action name="Execute">
-        <command>variety -p</command>
-      </action>
-    </keybind>
-    <keybind key="A-n">
-      <action name="Execute">
-        <command>variety -n</command>
-      </action>
-    </keybind>
-    <keybind key="A-Right">
-      <action name="Execute">
-        <command>variety -n</command>
-      </action>
-    </keybind>
-    <keybind key="A-Down">
-      <action name="Execute">
-        <command>variety --resume</command>
-      </action>
-    </keybind>
-    <keybind key="A-Up">
-      <action name="Execute">
-        <command>variety --pause</command>
-      </action>
-    </keybind>
     <keybind key="W-Pause">
       <action name="Execute">
-        <command>openbox-exit</command>
+        <command>exit-openbox</command>
       </action>
     </keybind>
     <keybind key="S-W-q">
       <action name="Close"/>
-    </keybind>
-    <keybind key="W-Return">
-      <action name="Execute">
-        <command>exo-open --launch TerminalEmulator</command>
-      </action>
-    </keybind>
-    <keybind key="S-W-Return">
-      <action name="Execute">
-        <command>exo-open --launch FileManager</command>
-      </action>
-    </keybind>
-    <keybind key="W-F1">
-      <action name="Execute">
-        <command>exo-open --launch WebBrowser</command>
-      </action>
-    </keybind>
-    <keybind key="W-F2">
-      <action name="Execute">
-        <command>subl3</command>
-      </action>
-    </keybind>
-    <keybind key="W-F3">
-      <action name="Execute">
-        <command>inkscape</command>
-      </action>
-    </keybind>
-    <keybind key="W-F4">
-      <action name="Execute">
-        <command>gimp</command>
-      </action>
-    </keybind>
-    <keybind key="W-F5">
-      <action name="Execute">
-        <command>meld</command>
-      </action>
-    </keybind>
-    <keybind key="W-F6">
-      <action name="Execute">
-        <command>vlc</command>
-      </action>
-    </keybind>
-    <keybind key="W-F7">
-      <action name="Execute">
-        <command>virtualbox</command>
-      </action>
-    </keybind>
-    <keybind key="W-F8">
-      <action name="Execute">
-        <command>exo-open --launch FileManager</command>
-      </action>
-    </keybind>
-    <keybind key="W-F9">
-      <action name="Execute">
-        <command>evolution</command>
-      </action>
-    </keybind>
-    <keybind key="W-F10">
-      <action name="Execute">
-        <command>spotify</command>
-      </action>
     </keybind>
     <keybind key="C-S-Escape">
       <action name="Execute">
@@ -695,33 +571,8 @@
         <command>xfce4-appfinder</command>
       </action>
     </keybind>
-    <keybind key="C-A-T">
-      <action name="Execute">
-        <command>exo-open --launch TerminalEmulator</command>
-      </action>
-    </keybind>
     <keybind key="C-A-d">
       <action name="ToggleShowDesktop"/>
-    </keybind>
-    <keybind key="C-A-V">
-      <action name="Execute">
-        <command>vivaldi-snapshot</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-B">
-      <action name="Execute">
-        <command>exo-open --launch FileManager</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-W">
-      <action name="Execute">
-        <command>subl3</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-S">
-      <action name="Execute">
-        <command>spotify</command>
-      </action>
     </keybind>
     <keybind key="C-A-C">
       <action name="Execute">
@@ -736,16 +587,6 @@
     <keybind key="C-A-O">
       <action name="Execute">
         <command>obconf</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-F">
-      <action name="Execute">
-        <command>firefox</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-G">
-      <action name="Execute">
-        <command>chromium</command>
       </action>
     </keybind>
   </keyboard>
@@ -1125,10 +966,10 @@
     <file>/var/lib/openbox/debian-menu.xml</file>
     <file>debian-menu.xml</file> -->
     <file>menu.xml</file>
-    <hideDelay>200</hideDelay>
+    <hideDelay>400</hideDelay>
     <!-- if a press-release lasts longer than this setting (in milliseconds), the
        menu is hidden again -->
-    <middle>yes</middle>
+    <middle>no</middle>
     <!-- center submenus vertically about the parent entry -->
     <submenuShowDelay>100</submenuShowDelay>
     <!-- time to delay before showing a submenu after hovering over the parent
@@ -1146,113 +987,16 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-  <!--
-  # this is an example with comments through out. use these to make your
-  # own rules, but without the comments of course.
-  # you may use one or more of the name/class/role/title/type rules to specify
-  # windows to match
-
-  <application name="the window's _OB_APP_NAME property (see obxprop)"
-              class="the window's _OB_APP_CLASS property (see obxprop)"
-               role="the window's _OB_APP_ROLE property (see obxprop)"
-              title="the window's _OB_APP_TITLE property (see obxprop)"
-               type="the window's _OB_APP_TYPE property (see obxprob)..
-                      (if unspecified, then it is 'dialog' for child windows)">
-  # you may set only one of name/class/role/title/type, or you may use more
-  # than one together to restrict your matches.
-
-  # the name, class, role, and title use simple wildcard matching such as those
-  # used by a shell. you can use * to match any characters and ? to match
-  # any single character.
-
-  # the type is one of: normal, dialog, splash, utility, menu, toolbar, dock,
-  #    or desktop
-
-  # when multiple rules match a window, they will all be applied, in the
-  # order that they appear in this list
-
-
-    # each rule element can be left out or set to 'default' to specify to not
-    # change that attribute of the window
-
-    <decor>yes</decor>
-    # enable or disable window decorations
-
-    <shade>no</shade>
-    # make the window shaded when it appears, or not
-
-    <position force="no">
-      # the position is only used if both an x and y coordinate are provided
-      # (and not set to 'default')
-      # when force is "yes", then the window will be placed here even if it
-      # says you want it placed elsewhere.  this is to override buggy
-      # applications who refuse to behave
-      <x>center</x>
-      # a number like 50, or 'center' to center on screen. use a negative number
-      # to start from the right (or bottom for <y>), ie -50 is 50 pixels from the
-      # right edge (or bottom).
-      <y>200</y>
-      <monitor>1</monitor>
-      # specifies the monitor in a xinerama setup.
-      # 1 is the first head, or 'mouse' for wherever the mouse is
-    </position>
-
-    <focus>yes</focus>
-    # if the window should try be given focus when it appears. if this is set
-    # to yes it doesn't guarantee the window will be given focus. some
-    # restrictions may apply, but Openbox will try to
-
-    <desktop>1</desktop>
-    # 1 is the first desktop, 'all' for all desktops
-
-    <layer>normal</layer>
-    # 'above', 'normal', or 'below'
-
-    <iconic>no</iconic>
-    # make the window iconified when it appears, or not
-
-    <skip_pager>no</skip_pager>
-    # asks to not be shown in pagers
-
-    <skip_taskbar>no</skip_taskbar>
-    # asks to not be shown in taskbars. window cycling actions will also
-    # skip past such windows
-
-    <fullscreen>yes</fullscreen>
-    # make the window in fullscreen mode when it appears
-
-    <maximized>true</maximized>
-    # 'Horizontal', 'Vertical' or boolean (yes/no)
-  </application>
-
-  # end of the example
--->
-    <!--
-    <application class="Gimp" name="gimp" role="gimp-toolbox" type="utility">
-      <maximized>vertical</maximized>
-    </application>
-    <application class="Gimp" name="gimp" role="gimp-dock" type="utility">
-      <maximized>vertical</maximized>
-    </application>
-    <application class="Gimp" name="gimp" role="gimp-image-window" type="normal">
+    <application name="oblogout">
       <position force="no">
-        <x>center</x>
-        <y>center</y>
+        <monitor>1</monitor>
+      </position>
+      <fullscreen>yes</fullscreen>
+    </application>
+    <application name="slimlock">
+      <position force="no">
+        <monitor>1</monitor>
       </position>
     </application>
-
-    <application class="Gimp" name="gimp-2.8" role="gimp-toolbox" type="utility">
-      <maximized>vertical</maximized>
-    </application>
-    <application class="Gimp" name="gimp-2.8" role="gimp-dock" type="utility">
-      <maximized>vertical</maximized>
-    </application>
-    <application class="Gimp" name="gimp-2.8" role="gimp-image-window" type="normal">
-      <position force="no">
-        <x>center</x>
-        <y>center</y>
-      </position>
-    </application>
--->
   </applications>
 </openbox_config>

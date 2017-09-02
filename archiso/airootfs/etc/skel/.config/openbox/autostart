@@ -6,15 +6,15 @@
 
 compton -b --config ~/.config/compton.conf &
 
+# bar
 tint2 &
+#(sleep 1; $HOME/.config/polybar/launch-ob-polybar.sh) &
 
-#thunar starting in daemon mode
-thunar --daemon &
+# thunar and bookmarks
+(sleep 1; thunar --daemon) &
+(sleep 1; xdg-user-dirs-gtk-update) &
 
-#bluetooth#
-#(sleep 3; blueberry-tray) &
-
-# Set background image
+# wallpaper
 (sleep 1; nitrogen --restore) &
 
 #on laptops without seperate numeric keyboard put hashtag in front
@@ -23,26 +23,16 @@ numlockx &
 ## GNOME PolicyKit authentication
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-## Volume control for systray
+## systray
 (sleep 2; volumeicon) &
-#(sleep 2; pasystray) &
-
-## Turn off/on System Beep
-xset b off
-
-## Enable power management
-xfce4-power-manager &
-
-##Clipboard Manager
+(sleep 3; nm-applet) &
 (sleep 3; clipit) &
+#(sleep 3; blueberry-tray) &
 
 ## XFCE4 Settings
 xfsettingsd &
-(sleep 5; nm-applet) &
+xfce4-power-manager &
+
+# skippy & conky
+(sleep 2; skippy-xd --config $HOME/.config/skippy-xd/skippy-xd.rc --start-daemon) &
 (sleep 2s && al-conky-session --autostart) &
-
-(sleep 2; skippy-xd --start-daemon) &
-
-#plank &
-#(sleep 2; temps) &
-#redshift-gtk &

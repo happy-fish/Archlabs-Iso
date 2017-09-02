@@ -15,12 +15,12 @@
     </item>
     <item label="Web Browser">
       <action name="Execute">
-        <command>exo-open --launch webbrowser</command>
+        <command>exo-open --launch WebBrowser</command>
       </action>
     </item>
     <item label="File Manager">
       <action name="Execute">
-        <command>exo-open --launch filemanager</command>
+        <command>exo-open --launch FileManager</command>
       </action>
     </item>
     <item label="Text Editor">
@@ -81,23 +81,6 @@
         </action>
       </item>
     </menu>
-    <menu id="development" label="Development">
-      <item label="Geany">
-        <action name="Execute">
-          <command>geany</command>
-        </action>
-      </item>
-      <item label="Meld">
-        <action name="Execute">
-          <command>meld</command>
-        </action>
-      </item>
-      <item label="Sublime Text">
-        <action name="Execute">
-          <command>subl3</command>
-        </action>
-      </item>
-    </menu>
     <menu id="graphics" label="Graphics">
       <item label="Gimp">
         <action name="Execute">
@@ -112,16 +95,6 @@
       <item label="Gpicview">
         <action name="Execute">
           <command>gpicview</command>
-        </action>
-      </item>
-      <item label="Inkscape">
-        <action name="Execute">
-          <command>inkscape</command>
-        </action>
-      </item>
-      <item label="Peek">
-        <action name="Execute">
-          <command>peek</command>
         </action>
       </item>
       <item label="Screenshot">
@@ -155,7 +128,7 @@
     <menu id="multimedia" label="Multimedia">
       <item label="Deadbeef">
         <action name="Execute">
-          <command>deadbeef</command>
+          <command>audacious</command>
         </action>
       </item>
       <item label="Pulse Audio Preferences">
@@ -175,11 +148,6 @@
       </item>
     </menu>
     <menu id="network" label="Network">
-      <item label="Chromium">
-        <action name="Execute">
-          <command>chromium</command>
-        </action>
-      </item>
       <item label="Filezilla">
         <action name="Execute">
           <command>filezilla</command>
@@ -200,11 +168,6 @@
           <command>transmission-gtk</command>
         </action>
       </item>
-      <item label="Vivaldi">
-        <action name="Execute">
-          <command>vivaldi-snapshot</command>
-        </action>
-      </item>
     </menu>
     <menu id="office" label="Office">
       <item label="Calculator">
@@ -212,14 +175,9 @@
           <command>galculator</command>
         </action>
       </item>
-      <item label="Evince">
+      <item label="Pdf Viewer">
         <action name="Execute">
           <command>evince</command>
-        </action>
-      </item>
-      <item label="Google Docs">
-        <action name="Execute">
-          <command>exo-open https://drive.google.com/</command>
         </action>
       </item>
       <menu id="office menu" label="Libre Office">
@@ -334,22 +292,17 @@
           <command>gksudo geany /etc/slim.conf</command>
         </action>
       </item>
-      <item label="Rofi Appearance">
+      <item label="Rofi Theme">
         <action name="Execute">
           <command>rofi-theme-selector rofi -modi drun,run -show drun -width 700 -location 0 -font "Noto Sans 13"</command>
         </action>
       </item>
-      <item label="Termite Appearance">
-        <action name="Execute">
-          <command>geany ~/.config/termite/config</command>
-        </action>
-      </item>
-      <item label="Exit Appearance">
+      <item label="Oblogout Theme">
         <action name="Execute">
           <command>gksudo geany /etc/oblogout.conf</command>
         </action>
       </item>
-      <item label="Choose Wallpaper">
+      <item label="Wallpaper">
         <action name="Execute">
           <command>nitrogen</command>
         </action>
@@ -360,14 +313,9 @@
           <command>xfce4-notifyd-config</command>
         </action>
       </item>
-      <item label="Pulseaudio Preferences">
+      <item label="Audio Preferences">
         <action name="Execute">
           <command>pavucontrol</command>
-        </action>
-      </item>
-      <item label="Oomox">
-        <action name="Execute">
-          <command>oomox-gui</command>
         </action>
       </item>
       <separator/>
@@ -386,17 +334,12 @@
           <command>xfce4-settings-manager</command>
         </action>
       </item>
-      <item label="Dmenu">
-        <action name="Execute">
-          <command>dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'</command>
-        </action>
-      </item>
       <item label="Screen Layout Editor">
         <action name="Execute">
           <command>arandr</command>
         </action>
       </item>
-      <item label="Printing">
+      <item label="Printer Setup">
         <action name="Execute">
           <command>system-config-printer</command>
         </action>
@@ -413,6 +356,23 @@
           <command>pamac-updater</command>
         </action>
       </item>
+      <menu id="nvidia" label="Nvidia Drivers">
+        <item label="Install Nvidia">
+          <action name="Execute">
+            <command>termite --geometry=700x500 --exec=sudo install-nvidia</command>
+          </action>
+        </item>
+        <item label="Install Nvidia for Optimus">
+          <action name="Execute">
+            <command>termite --geometry=700x500 --exec=sudo install-nvidia -b</command>
+          </action>
+        </item>
+        <item label="Revert to Nouveau Driver">
+          <action name="Execute">
+            <command>termite --geometry=700x500 --exec=sudo install-nvidia -n</command>
+          </action>
+        </item>
+      </menu>
       <separator/>
       <item label="File Manager As Root">
         <action name="Execute">

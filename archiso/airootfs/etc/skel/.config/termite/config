@@ -1,71 +1,78 @@
 [options]
-#https://github.com/thestinger/termite/blob/master/config
-allow_bold = true
-audible_bell = false
-browser = xdg-open
-clickable_url = true
-cursor_blink = system
-cursor_shape = block
-dynamic_title = true
-filter_unmatched_urls = true
-font = Monospace 13
-geometry = 900x650
-highlight = #2f2f2f
-icon_name = terminal
-modify_other_keys = false
-mouse_autohide = false
 scroll_on_output = false
 scroll_on_keystroke = true
-scrollback_lines = 15000
-size_hints = false
-search_wrap = true
+audible_bell = false
+mouse_autohide = false
+allow_bold = true
+dynamic_title = true
 urgent_on_bell = true
+clickable_url = true
+font = Ubuntu Mono 11
+scrollback_lines = 10000
+search_wrap = true
+icon_name = utilities-terminal
+geometry = 750x550
+scrollback_lines = 15000
+clickable_url = true
 
-[hints]
-#font = Monospace 12
-#foreground = #dcdccc
-#background = #3f3f3f
-#active_foreground = #e68080
-#active_background = #3f3f3f
-#padding = 2
-#border = #3f3f3f
-#border_width = 10
-#roundness = 2.0
+# "system", "on" or "off"
+cursor_blink = system
 
-############################################################
-#### You can change the color coding to your liking
-#### There is a folder themes in ~/config/termite/themes
-#### Copy/paste the colors from one of the 79+ templates to this one
-#### A backup of the original config termite is present  
-############################################################
-#### Use websites to make the terminal your own
-#### https://terminal.sexy
-#### https://critical.ch/xterm/
-############################################################
+# "block", "underline" or "ibeam"
+cursor_shape = ibeam
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+browser = xdg-open
+
+# set size hints for the window
+#size_hints = false
+
+# Hide links that are no longer valid in url select overlay mode
+filter_unmatched_urls = true
+
+# emit escape sequences for extra modified keys
+#modify_other_keys = false
 
 [colors]
-foreground      = ghost
-foreground_bold = #c5c8c6
-#foreground_dim   = 
-cursor          = #c5c8c6
-#cursor_foreground = #dcdccc
-# 20% background transparency (requires a compositor)
-background = rgba(75, 75, 75, 0.8)
-#background = #1d1f21
+foreground      = #F1F1F1
+foreground_bold = #F7F6F2
+cursor          = #F7F6F2
+background = rgba (33,33,33,0.90)
 
-color0 = #3f3f3f
-color1 = #705050
-color2 = #60b48a
-color3 = #dfaf8f
-color4 = #506070
-color5 = #dc8cc3
-color6 = #8cd0d3
-color7 = #dcdccc
-color8 = #709080
-color9 = #dca3a3
-color10 = #c3bf9f
-color11 = #f0dfaf
-color12 = #94bff3
-color13 = #ec93d3
-color14 = #93e0e3
-color15 = #ffffff
+# Black, Gray, Silver, White
+color0  = #494949
+color8  = #969896
+color7  = #c5c8c6
+color15 = #F1F1F1
+
+# Red
+color1  = #D64937
+color9  = #D64937
+
+# Green
+color2  = #19BC9C
+color10 = #19BC9C
+
+# Yellow
+color3  = #4ECFAF
+color11 = #4ECFAF
+
+# Blue
+color4  = #4E88CF
+color12 = #4E88CF
+
+# Purple
+color5  = #AF86C8
+color13 = #AF86C8
+
+# Teal
+color6  = #5DD5FF
+color14 = #5DD5FF
+
+# Extra colors
+color16 = #D64937
+color17 = #2378DF
+color18 = #282a2e
+color19 = #373b41
+color20 = #b4b7b4
+color21 = #e0e0e0

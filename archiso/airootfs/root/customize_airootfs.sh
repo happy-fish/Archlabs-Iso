@@ -22,10 +22,6 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 useradd -m -p "archlabs" -u 500 -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /bin/zsh liveuser
 chown -R liveuser:users /home/liveuser
 
-#Enable Calamares Autostart
-# desktop file in config/autostart
-#ln -fs /usr/share/applications/calamares.desktop /home/liveuser/.config/autostart/calamares.desktop
-
 #enable autologin
 groupadd -r autologin
 gpasswd -a liveuser autologin
@@ -38,10 +34,10 @@ systemctl set-default graphical.target
 systemctl enable pacman-init.service choose-mirror.service NetworkManager.service org.cups.cupsd.service bluetooth.service
 systemctl enable ntpd.service
 
-export _EDITOR=nano
-echo "EDITOR=${_EDITOR}" >> /etc/environment
-echo "EDITOR=${_EDITOR}" >> /etc/skel/.bashrc
-echo "EDITOR=${_EDITOR}" >> /etc/profile
+#export _EDITOR=nano
+#echo "EDITOR=${_EDITOR}" >> /etc/environment
+#echo "EDITOR=${_EDITOR}" >> /etc/skel/.bashrc
+#echo "EDITOR=${_EDITOR}" >> /etc/profile
 
 # Remove liveuser locale set to avoid mixed locales
 sed -i 's/en_US.UTF-8 UTF-8/#en_US.UTF-8 UTF-8/g' /etc/locale.gen

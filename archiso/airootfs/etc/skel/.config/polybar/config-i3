@@ -1,13 +1,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;         Fonts you may want                       ;;;;;;;;
-;;;;;;;;      --- ttf-font-awesome                        ;;;;;;;;
-;;;;;;;;      --- ttf-material-icons                      ;;;;;;;;
-;;;;;;;;      --- nerd-fonts-complete                     ;;;;;;;;
+;;;;;;;;           Fonts you may want                      ;;;;;;;;
+;;;;;;;;        --- ttf-font-awesome                       ;;;;;;;;
+;;;;;;;;        --- ttf-material-icons                     ;;;;;;;;
+;;;;;;;;        --- nerd-fonts-complete                    ;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;             Colours
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 
 [colors]
 background = #131313
@@ -15,11 +14,12 @@ foreground = #EFF0F1
 urgent     = #E64141
 blue       = #1793D1
 b-alt      = #131313
-
+arc        = #484852
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;              Bars
+;;;;;;            i3 Bars
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 
 [settings]
 throttle-output = 5
@@ -30,6 +30,7 @@ compositing-foreground = source
 compositing-overline = over
 compositing-underline = over
 compositing-border = over
+
 
 [bar/bar1]
 ; Use  xrandr -q | grep " connected" | cut -d ' ' -f1
@@ -53,20 +54,21 @@ font-1 = FontAwesome:pixelsize=12:antialias=false;2
 font-2 = MaterialIcons:size=12:antialias=false;2
 font-3 = Fira Sans:size=12:weight=regular;2
 
-modules-left = workspaces rofi menu
-modules-center = window_count
-modules-right = pkg battery network compton memory cpu temp volume time
+modules-left = workspace-icon rofi menu
+modules-center =
+modules-right = pkg battery network compton memory temp cpu volume time
 
 module-margin = 1
 padding-right = 0
 padding-left = 0
 bottom = false
-underline-size = 2
+underline-size = 0
 ;tray-position = center
 ;tray-padding = 10
 ;tray-background = ${colors.background}
 ;tray-offset-x = 10%
 ;tray-offset-y = 0
+
 
 
 [bar/bar2]
@@ -91,22 +93,20 @@ font-1 = FontAwesome:pixelsize=12:antialias=false;2
 font-2 = MaterialIcons:size=12:antialias=false;2
 font-3 = Fira Sans:size=12:weight=regular;2
 
-modules-left = workspaces rofi
-modules-center = window_count
+modules-left = workspace-icon rofi
+modules-center =
 modules-right = filesystem trash volume
 
 module-margin = 1
 padding-right = 0
 padding-left = 0
 bottom = false
-underline-size = 2
-
+underline-size = 0
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;              Modules
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 
 [module/rofi]
 type = custom/script
@@ -136,7 +136,7 @@ interval = 3
 format = <label>
 format-prefix = "  "
 format-prefix-foreground = ${colors.foreground}
-label = %{A1:termite --geometry=500x300 --exec=htop &:}%percentage_used%%%{A}
+label = %{A1:termite --exec=htop &:}%percentage_used%%%{A}
 
 
 [module/cpu]
@@ -144,7 +144,7 @@ type = internal/cpu
 interval = 1
 format-prefix = "  "
 format-prefix-foreground = ${colors.foreground}
-label = %{A1:termite --geometry=500x300 --exec=htop &:}%percentage%%%{A}
+label = %{A1:termite --exec=htop &:}%percentage%%%{A}
 
 
 [module/time]
@@ -193,26 +193,25 @@ interval = 2
 label-padding = 1
 
 
-[module/window_count]
-type = custom/script
-interval = 1
-label = %{A1:skippy-xd --toggle-window-picker:}   %output%  %{A}
-exec = echo "$(($(wmctrl -l -i | wc -l)-1))"
-format = <label>
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground}
-format-padding = 3
-
-
 [module/filesystem]
 type = internal/fs
 interval = 25
 mount-0 = /
 label-mounted =  %mountpoint%:%percentage_used%%
-label-mounted-foreground = ${colors.foreground}
+label-mounted-foreground = ${colors.blue}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.blue}
 
+
+[module/trash]
+interval = 1
+type = custom/script
+exec = $HOME/.config/polybar/scripts/trash
+format-prefix = "  "
+format-prefix-foreground = ${colors.foreground}
+format-background = ${colors.b-alt}
+click-right = rm -rf $HOME/.local/share/Trash/files/*
+click-left = exo-open --launch FileManager $HOME/.local/share/Trash/files
 
 
 [module/volume]
@@ -238,19 +237,6 @@ bar-volume-fill = ""
 bar-volume-empty = ""
 bar-volume-empty-foreground = ${colors.foreground}
 bar-volume-empty-background = ${colors.b-alt}
-
-
-
-[module/trash]
-interval = 1
-type = custom/script
-exec = $HOME/.config/polybar/scripts/trash
-format-prefix = "  "
-format-prefix-foreground = ${colors.foreground}
-format-background = ${colors.b-alt}
-click-right = rm -rf $HOME/.local/share/Trash/files/*
-click-left = exo-open --launch FileManager $HOME/.local/share/Trash/files
-
 
 
 [module/menu]
@@ -284,7 +270,7 @@ menu-1-3-exec = geany &
 menu-2-0 = "  "
 menu-2-0-exec = audacious &
 menu-2-1 = "  "
-menu-2-1-exec = termite --geometry=600x500 --exec=pacli &
+menu-2-1-exec = termite --exec=pacli &
 menu-2-2 = "  "
 menu-2-2-exec = xfce4-settings-manager &
 menu-2-3 = "  "
@@ -293,54 +279,55 @@ menu-2-4 = "  "
 menu-2-4-exec = scrot 'ArchLabs_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f' &
 # 3
 menu-3-0 = "   "
-menu-3-0-exec = slimlock
+menu-3-0-exec = i3lock
 menu-3-1 = "   "
-menu-3-1-exec = openbox --exit
+menu-3-1-exec = i3-msg exit
 menu-3-2 = "   "
 menu-3-2-exec = systemctl reboot
 menu-3-3 = "   "
 menu-3-3-exec = systemctl poweroff
 
 
-[module/workspaces]
-type = internal/xworkspaces
+[module/workspace-icon]
+type = internal/i3
+pin-workspaces = true
+strip-wsnumbers = true
+index-sort = true
 enable-click = true
-enable-scroll = true
-format-padding = 1
-Additional formatting
-icon-0 = 1;
-icon-1 = 2;
-icon-2 = 3;
-icon-3 = 4;
-icon-4 = 5;
-icon-5 = 6;
-icon-6 = 7;
-icon-7 = 8;
-icon-8 = 9;
-icon-9 = 10;
-;icon-default = 
-
-format = <label-state>
-label-monitor = %name%
-
-label-active = " %icon% %name% "
-label-active-foreground = ${colors.blue}
-label-active-background = ${colors.background}
-label-active-underline = ${colors.blue}
-
-label-occupied = " %icon% %name% "
-label-occupied-underline = ${colors.blue}
-label-occupied-background = ${colors.background}
-label-occupied-foreground = ${colors.foreground}
-
-label-urgent = " %icon% %name% "
-label-urgent-foreground = ${colors.urgent}
-label-urgent-background = ${colors.background}
+enable-scroll = false
+wrapping-scroll = false
+reverse-scroll = false
+fuzzy-match = true
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+ws-icon-default = 
+format = <label-state><label-mode>
+label-mode = %mode%
+label-mode-padding = 2
+label-mode-background = ${colors.arc}
+label-mode-underline = ${colors.urgent}
+label-focused = %icon%
+label-focused-background = ${colors.arc}
+label-focused-underline = ${colors.blue}
+label-focused-padding = 2
+label-unfocused = %icon%
+label-unfocused-padding = 2
+label-visible = %icon%
+label-visible-underline = ${colors.blue}
+label-visible-background = ${colors.arc}
+label-visible-padding = 2
+label-urgent = %icon%
+label-urgent-background = ${colors.arc}
 label-urgent-underline = ${colors.urgent}
-
-label-empty = " %icon% %name% "
-label-empty-foreground = ${colors.foreground}
-
+label-urgent-padding = 2
 
 
 
@@ -354,7 +341,7 @@ label-empty-foreground = ${colors.foreground}
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;    Extra Modules  (not used)
+;;;;;;       Extra Modules
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
@@ -372,7 +359,6 @@ format-prefix-foreground = ${colors.foreground}
 format-padding = 3
 
 
-
 [module/eth]
 type = internal/network
 interface = eno1
@@ -384,6 +370,17 @@ label-disconnected = "  "
 label-disconnected-foreground = ${colors.foreground}
 label-disconnected-background = ${colors.b-alt}
 
+
+
+[module/window_count]
+type = custom/script
+interval = 1
+label = %{A1:skippy-xd --toggle-window-picker:}   %output%  %{A}
+exec = echo "$(wmctrl -l -i | wc -l)"
+format = <label>
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground}
+format-padding = 3
 
 
 [module/coreuse]
@@ -402,7 +399,6 @@ ramp-coreload-3 = %{F#D1D1D0}▅%{F-}
 ramp-coreload-4 = %{F#D1D1D0}▆%{F-}
 ramp-coreload-5 = %{F#FFFFFF}▇%{F-}
 ramp-coreload-6 = %{F#FFFFFF}█%{F-}
-
 
 
 [module/battery]
